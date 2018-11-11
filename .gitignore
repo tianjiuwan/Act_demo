@@ -1,0 +1,14 @@
+/Library/
+/Packages/
+/ProjectSettings/
+/Temp/
+/Assets\Res\AssetBundleExport/
+/demo.csproj
+/demo.Editor.csproj
+/demo.Editor.Plugins.csproj
+/demo.Plugins.csproj
+/demo.sln
+/Unity.PackageManagerUI.Editor.csproj
+/UnityEditor.StandardEvents.csproj
+/.vs/demo/v15/.suo
+/.vs/demo/v15/.server/sqlite3/storage.ide
