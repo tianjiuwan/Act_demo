@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 52638032
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bd4bc139ea1f5670042e9d2af24ca7ed
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 51a16e16d5113854a16091e54ae5bb0d
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Materials/Blood_Puddle.mat
+Dependencies: []

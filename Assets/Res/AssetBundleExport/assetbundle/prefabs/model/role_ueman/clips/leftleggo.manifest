@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3737329978
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7e553164e68cf76af4e72a98d93412e9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 43a4b7bca5993049df5a20320e1ab708
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Prefabs/Model/role_ueman/clips/leftLegGo.anim
+Dependencies: []

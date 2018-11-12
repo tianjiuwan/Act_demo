@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 696968861
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ebaa0978976b5aee822543ae711bffca
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b474380d27eb4bc856799e9c585c4864
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/JHZHU_fahongbao.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_youyuan.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/JHZHU_yanhua.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/JHZHU_xitang.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_Bg2.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_shuaxin.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_Bg1.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/JHZ1_yanxi.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/JHZHU_hongbao.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_word1.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_word3.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_word2.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_jinglian.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_word6.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_word.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_word4.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/JHZHU_yanxi.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_BgLittle.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_word5.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_Bg.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_change.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_zudui.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_haoyou.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_qianghua.png
+- Assets/Res/AssetBundle/Atlas/GuildAtlas/TFJH_Bg3.png
+Dependencies: []

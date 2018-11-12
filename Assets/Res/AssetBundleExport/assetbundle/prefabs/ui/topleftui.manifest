@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 4157751796
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2a90a6c3f4fd357a3e7ee72c9d08d01a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 29e833c0e2c01ceb9114c8ad6302d417
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Prefabs/ui/TopLeftUI.prefab
+Dependencies: []

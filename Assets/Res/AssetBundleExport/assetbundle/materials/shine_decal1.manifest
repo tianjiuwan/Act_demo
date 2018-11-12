@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 2402584077
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 04d8e1b196e998d42744f5e534272a28
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 51a16e16d5113854a16091e54ae5bb0d
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Materials/Shine_Decal1.mat
+Dependencies: []

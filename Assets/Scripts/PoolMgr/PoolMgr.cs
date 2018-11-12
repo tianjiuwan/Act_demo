@@ -1,16 +1,65 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using System.IO;
 
 public class PoolMgr : Singleton<PoolMgr>, IDispose
 {
     private Dictionary<string, BasePool> pools = null;
+    public Transform PoolRoot;
 
     protected override void initialize()
     {
         pools = new Dictionary<string, BasePool>();
+        GameObject go = new GameObject("PoolRoot");
+        go.transform.position = new Vector3(10000, 10000, 10000);
+        PoolRoot = go.transform;
+        GameObject.DontDestroyOnLoad(go);
     }
 
+    //获取
+    public void getObj(string resName, Action<GameObject> callBack, E_PoolMode mode = E_PoolMode.Time, E_PoolType pType = E_PoolType.None, float time = 60)
+    {
+        resName = resName.ToLower();
+        if (!pools.ContainsKey(resName))
+        {
+            string resPath = Path.Combine(Define.abPre, resName).ToLower();            
+            BasePool p = PoolFactory.create(resName, resPath, mode, pType, time);
+            pools.Add(resName, p);
+        }
+        pools[resName].getObj(callBack);
+    }
+
+    //移除
+    public void remove(string resName, Action<GameObject> callBack)
+    {
+        if (pools.ContainsKey(resName))
+        {
+            pools[resName].removeHandler(callBack);
+        }
+    }
+
+    //回收
+    public void recyleObj(GameObject go)
+    {
+        PoolObj obj = go.GetComponent<PoolObj>();
+        if (obj != null)
+        {
+            if (pools.ContainsKey(obj.resName))
+            {
+                pools[obj.resName].recyle(go);
+            }
+            else
+            {
+                GameObject.Destroy(go);
+            }
+        }
+        else
+        {
+            GameObject.Destroy(go);
+        }
+    }
 
     public void onDispose()
     {

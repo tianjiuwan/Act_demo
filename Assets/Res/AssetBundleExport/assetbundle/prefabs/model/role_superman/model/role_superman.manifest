@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 1965770103
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cda7d88f5bd9d853ff098350ebcf757c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3d95954eabb5e39e3976c9474c1b3ca9
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Prefabs/Model/role_superman/model/role_superman.prefab
+Dependencies:
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_superman/animator/role_superman_controller

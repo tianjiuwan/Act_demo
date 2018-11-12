@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3934460129
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8affa88c8e81de0f0d27eb1c397e166d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 43a4b7bca5993049df5a20320e1ab708
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Prefabs/Model/role_ueman/clips/attack2.anim
+Dependencies: []

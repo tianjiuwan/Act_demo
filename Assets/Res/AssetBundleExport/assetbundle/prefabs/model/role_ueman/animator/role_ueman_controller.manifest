@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+CRC: 3576178183
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9e2d857a7ed1fb1e46178d7195d6d38a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 46daa0ab816e68f527f38fb18aec3007
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Prefabs/Model/role_ueman/animator/role_ueman_Controller.controller
+Dependencies:
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/attack1
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/attack2
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/behit1
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/behit2
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/die
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/fistleftgo
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/fistthreego
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/fisttwogo
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/getup
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/idle
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/jumpdown
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/jumpup
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/fistrightgo
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/leftleggo
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/jumploop
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/bowright
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_ueman/clips/run

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 4063104700
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 599d984b62c5cdc157b08fa31775914d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c73412a662fd4e4f36af34cbdf078b85
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/ModelTextures/Bg.png
+Dependencies: []

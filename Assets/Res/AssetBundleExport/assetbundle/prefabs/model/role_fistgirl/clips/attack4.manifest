@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3191253708
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 77d6a6e11353b061f6b66b8b84c3d3ad
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 43a4b7bca5993049df5a20320e1ab708
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Prefabs/Model/role_fistgirl/clips/attack4.anim
+Dependencies: []

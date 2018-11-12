@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2015275498
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 45c57fe8870e9ab25bb660fe642d6915
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c73412a662fd4e4f36af34cbdf078b85
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/ModelTextures/Spark_Increase.png
+Dependencies: []

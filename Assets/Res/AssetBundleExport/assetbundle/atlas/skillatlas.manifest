@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 2841841267
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 58ec699817bf94d14417e2fc89a4243c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b474380d27eb4bc856799e9c585c4864
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/11120002.png
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/fangxiangBg.png
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/11120010.png
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/11120007.png
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/11120006.png
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/11120005.png
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/11120008.png
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/11120009.png
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/yaogan.png
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/WD_gui.png
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/WD_chusheng.png
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/WD_Bg.png
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/11120001.png
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/11120003.png
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/WD_diyu.png
+- Assets/Res/AssetBundle/Atlas/SkillAtlas/11120004.png
+Dependencies: []

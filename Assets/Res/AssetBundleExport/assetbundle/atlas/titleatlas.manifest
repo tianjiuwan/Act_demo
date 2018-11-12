@@ -1,0 +1,48 @@
+ManifestFileVersion: 0
+CRC: 356374078
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 16787790df0d4dfbc9aa83f0a09ee9de
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b474380d27eb4bc856799e9c585c4864
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10410001.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/baoxiang.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10310010.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/qixue.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10410006.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/ZJM_sjsl.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10410004.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10410003.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/xuetiaohuanchong.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/hunxue.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10410005.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10310006.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10310001.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/xuetiaoBgLittle.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10310002.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/duizhang.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/ZJM_shouling.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/ZJM_toumu.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/ZJM_jysl.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10410002.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/duobao.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10310005.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10410008.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10410007.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10310007.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10310008.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10310009.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/ZJM_jingying.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10310004.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10310003.png
+- Assets/Res/AssetBundle/Atlas/TitleAtlas/10410009.png
+Dependencies: []

@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 793951280
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 19d9c86b40ad894ba2832458345be2dd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 51a16e16d5113854a16091e54ae5bb0d
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Materials/Shield_Floor.mat
+Dependencies: []

@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 2115974168
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1fb7b3688da6b7a21f9e33e97b0d71ca
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: abb9b9167ab0d9f4af2beeb617361f49
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Materials/ground.mat
+Dependencies:
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/ground

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2365896190
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6dba00b6bc71a7b8ba35b3f0dcb1c1bc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c73412a662fd4e4f36af34cbdf078b85
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/ModelTextures/Water_Splash.PNG
+Dependencies: []

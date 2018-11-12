@@ -5,9 +5,19 @@ public class AssetMgr : Singleton<AssetMgr>
 {
     private Dictionary<string, PackAsset> bundles = null;
 
+    protected override void initialize()
+    {
+        bundles = new Dictionary<string, PackAsset>();
+    }
+
+    //是否有ab了
     private bool hasAsset(string name)
     {
-        return true;
+        return bundles.ContainsKey(name);
+    }
+
+    private void addAsset(PackAsset ab) {
+        bundles.Add(ab.Name, ab);
     }
 
     private PackAsset getAsset(string name)
@@ -15,18 +25,13 @@ public class AssetMgr : Singleton<AssetMgr>
         return bundles[name];
     }
 
-    private  void addRef(string name)
+    private void addRefCount(string name)
     {
         bundles[name].addRef();
     }
-    private  void subRef(string name)
+    private void subRefCount(string name,int count)
     {
-        bundles[name].subRef();
-    }
-
-    protected override void initialize()
-    {
-        bundles = new Dictionary<string, PackAsset>();
+        bundles[name].subRef(count);
     }
 
     public void onDispose()
@@ -43,6 +48,19 @@ public class AssetMgr : Singleton<AssetMgr>
     public static PackAsset get(string name)
     {
         return Instance.getAsset(name);
+    }
+
+    public static void add(PackAsset ab) {
+        Instance.addAsset(ab);
+    }
+
+    public static void addRef(string name)
+    {
+        Instance.bundles[name].addRef();
+    }
+    public static void subRef(string name,int count =1)
+    {
+        Instance.bundles[name].subRef(count);
     }
     #endregion
 }

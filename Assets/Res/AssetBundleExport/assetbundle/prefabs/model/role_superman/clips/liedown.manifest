@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 442151206
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5b286aeaf1143298b6db095a909b75c6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 43a4b7bca5993049df5a20320e1ab708
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Prefabs/Model/role_superman/clips/lieDown.anim
+Dependencies: []

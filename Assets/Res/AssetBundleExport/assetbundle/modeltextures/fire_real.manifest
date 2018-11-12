@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1390031703
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 69aa5a2a524a1ea31b2078d0665a8087
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c73412a662fd4e4f36af34cbdf078b85
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/ModelTextures/Fire_real.png
+Dependencies: []

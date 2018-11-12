@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3455875735
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fa80e6dac182e188623aa67caf3acb27
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c73412a662fd4e4f36af34cbdf078b85
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/ModelTextures/Trajectory_Blur.png
+Dependencies: []

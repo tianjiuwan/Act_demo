@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 707368128
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c775b5f8111b55fec6ca556ce9a0fbfc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: abb9b9167ab0d9f4af2beeb617361f49
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Materials/UIHP.mat
+Dependencies:
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/noisedark
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/shader/uihead

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 4016272187
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 36e47bdc57868cc0b40698dad6cd3856
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 43a4b7bca5993049df5a20320e1ab708
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Prefabs/Model/role_ueman/clips/fistRightGo.anim
+Dependencies: []

@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 398123737
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1403b19eb244553e0d3bd52474d55e43
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ac0edc34977d147448e346aa93f2763d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Prefabs/effect/BloodSplatCritical.prefab
+Dependencies:
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/materials/circle

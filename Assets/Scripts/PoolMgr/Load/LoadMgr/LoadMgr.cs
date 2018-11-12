@@ -5,17 +5,19 @@ using System;
 
 public class LoadMgr : Singleton<LoadMgr>, IDispose
 {
-    static Dictionary<string, LoadTask> loadMap = new Dictionary<string, LoadTask>();
+    private Dictionary<string, LoadTask> loadMap = null;
 
-    public static void doLoad(LoadTask task)
+    private void addLoad(string resName,string resPath, Action<string> callBack)
     {
-        //loadMap.Add(task.resName, task);
-        //task.addHandler(onLoadFinish);
-        //StartCourtine(task.doLoad)
+        LoadTask task = new LoadTask(resName, resPath);
+        loadMap.Add(resName, task);
+        task.addHandler(onLoadFinish);
+        task.addHandler(callBack);
+        LoadThread.Instance.StartCoroutine(task.doLoad());
     }
 
     //加载任务回调Mgr
-    public static void onLoadFinish(string resName)
+    private void onLoadFinish(string resName)
     {
         if (loadMap.ContainsKey(resName))
         {
@@ -24,35 +26,39 @@ public class LoadMgr : Singleton<LoadMgr>, IDispose
     }
 
     //当前加载任务是否已经存在
-    public static bool hasTask(string resName)
+    private bool has(string resName)
     {
         return loadMap.ContainsKey(resName);
     }
     //加载任务 添加一个回调
-    public static void addHandler(string resName, Action<string> callBack)
+    private void addCall(string resName, Action<string> callBack)
     {
-        //loadTask task = loadMap[resName];
-        //task.addHandler(callBack);
-    }
-
-
-    private Dictionary<string, LoadItem> loaders = null;
-
-    private bool hasItem(string name) {
-        return loaders.ContainsKey(name);
-    }
-
-    private void addItem(string name) {
-        //LoadItem item = new LoadItem(name);
+        LoadTask task = loadMap[resName];
+        task.addHandler(callBack);
     }
 
     protected override void initialize()
     {
-        loaders = new Dictionary<string, LoadItem>();
+        loadMap = new Dictionary<string, LoadTask>();
     }
 
     public void onDispose()
     {
 
     }
+
+    #region 接口
+    public static void doLoad(string resName,string resPath, Action<string> callBack)
+    {
+        Instance.addLoad(resName, resPath, callBack);
+    }
+    public static bool hasTask(string resName)
+    {
+        return Instance.has(resName);
+    }
+    public static void addHandler(string resName, Action<string> callBack)
+    {
+        Instance.addCall(resName, callBack);
+    }
+    #endregion
 }

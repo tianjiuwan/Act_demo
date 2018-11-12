@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1722263911
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dfd88af5e34614fff371aeba76b66055
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c73412a662fd4e4f36af34cbdf078b85
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/ModelTextures/role_001.png
+Dependencies: []

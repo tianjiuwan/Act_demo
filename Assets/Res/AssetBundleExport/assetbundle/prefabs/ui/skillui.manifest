@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 915522712
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ac1ba7a2871130c34501cb04edd068f6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: df221c2f2e80a232c0b8bb8be59cfbba
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Prefabs/ui/SkillUI.prefab
+Dependencies:
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/atlas/facebookatlas
+- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/atlas/skillatlas

@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 4000605596
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0a71dad92d1cf013a83a5f5be6b164ca
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 51a16e16d5113854a16091e54ae5bb0d
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Materials/Soft_Smoke.mat
+Dependencies: []

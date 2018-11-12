@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3448860693
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a38a02a9ef3d0dd726e4565be1b33b9b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c73412a662fd4e4f36af34cbdf078b85
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/ModelTextures/Sword.png
+Dependencies: []

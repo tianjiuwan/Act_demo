@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2160880952
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 23901f3c13fc00feaa0aa225d983c8f4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 43a4b7bca5993049df5a20320e1ab708
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Prefabs/Model/role_ueman/clips/jumpDown.anim
+Dependencies: []

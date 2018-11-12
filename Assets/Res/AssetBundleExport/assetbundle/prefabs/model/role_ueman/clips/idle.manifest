@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1793549489
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fa5f949b96fa5d4f7f9484422d25db05
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 43a4b7bca5993049df5a20320e1ab708
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Prefabs/Model/role_ueman/clips/idle.anim
+Dependencies: []
