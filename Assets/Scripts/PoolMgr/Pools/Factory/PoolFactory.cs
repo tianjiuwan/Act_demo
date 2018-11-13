@@ -10,6 +10,9 @@ public class PoolFactory
             case E_PoolType.UICache:
                 p = new UICachePool(resName, resPath, mode, pType, time);
                 break;
+            case E_PoolType.Atlas:
+                p = new AtlasPool(resName, resPath, mode, pType, time);
+                break;
             default:
                 p = new BasePool(resName, resPath, mode, pType, time);
                 break;

@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AppStart : MonoBehaviour
 {
     private GameObject roleObj = null;
+    [SerializeField]
+    private Image img = null;
+
     // Use this for initialization
     void Start()
-    {
+    {        
         ManifestMgr.Init();
     }
 
@@ -31,5 +35,22 @@ public class AppStart : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R)) {
             PoolMgr.Instance.recyleObj(roleObj);
         }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            if (img != null)
+            {
+                string spName = "chosenKuang".ToLower();
+                PoolMgr.Instance.getObj(spName, (sp) =>
+                {
+                    img.sprite = sp;
+                });
+            }
+            else {
+                UnityEngine.Debug.LogError("img == null ");
+            }
+
+        }
+
     }
 }

@@ -93,10 +93,10 @@ public class PackAsset : IDispose
         if (handler != null)
         {
             for (int i = 0; i < handler.Count; i++)
-            {
+            {                
                 GameObject go = GameObject.Instantiate(this.obj) as GameObject;
                 GameObject.DontDestroyOnLoad(go);
-                PoolObj po= go.AddComponent<PoolObj>();
+                PoolObj po = go.AddComponent<PoolObj>();
                 po.resName = resName;
                 handler[i].Invoke(go);
             }
@@ -104,6 +104,23 @@ public class PackAsset : IDispose
         }
     }
 
+    //泛型获取 同步
+    public T getObj<T>(string name) where T : UnityEngine.Object
+    {
+        return ab.LoadAsset<T>(name);
+    }
+    //泛型获取 异步
+    public void getObj<T>(string name, Action<T> callBack) where T : UnityEngine.Object
+    {
+        LoadThread.Instance.StartCoroutine(getObjAsync(name, callBack));
+    }
+
+    IEnumerator getObjAsync<T>(string name, Action<T> callBack) where T : UnityEngine.Object
+    {
+        AssetBundleRequest req =  ab.LoadAssetAsync<T>(name);
+        yield return req;
+        callBack(req.asset as T);
+    }
     public void onDispose()
     {
 

@@ -7,35 +7,46 @@ using UnityEngine;
 /// </summary>
 public class BasePool : IDispose
 {
-    private string resName;
-    private string resPath;
-    private E_PoolMode pMode = E_PoolMode.None;
-    private E_PoolType pType = E_PoolType.None;
-    private double lastUseTime = -1;
-    private float lifeTime = 60;
-    private Transform poolRoot;
-    private List<string> deps = null;
-    private List<GameObject> cacheLst = null;
-    private List<Action<GameObject>> handler = null;
+    protected string resName;
+    protected string resPath;
+    protected E_PoolMode pMode = E_PoolMode.None;
+    protected E_PoolType pType = E_PoolType.None;
+    protected double lastUseTime = -1;
+    protected float lifeTime = 60;
+    protected Transform poolRoot;
+    protected List<string> deps = null;
+    protected List<GameObject> cacheLst = null;
+    protected List<Action<GameObject>> handler = null;
 
-    public BasePool(string resName,string resPath, E_PoolMode mode, E_PoolType pType, float time)
+    public BasePool(string resName, string resPath, E_PoolMode mode, E_PoolType pType, float time)
     {
         this.resName = resName;
         this.resPath = resPath;
         pMode = mode;
         this.pType = pType;
         lifeTime = time;
-        deps = new List<string>();
-        ManifestMgr.getDeps(resName, ref deps);
-        cacheLst = new List<GameObject>();
         string poolName = string.Format("[{0}][{1}][{2}]", mode.ToString(), pType.ToString(), resName);
         GameObject go = new GameObject(poolName);
         this.poolRoot = go.transform;
         this.poolRoot.SetParent(PoolMgr.Instance.PoolRoot);
         this.poolRoot.transform.localPosition = Vector3.zero;
+        initialize();
     }
 
-    public void getObj(Action<GameObject> callBack,bool forceRemove=false)
+    //池子初始化
+    protected virtual void initialize()
+    {
+        deps = new List<string>();
+        ManifestMgr.getDeps(resName, ref deps);
+        cacheLst = new List<GameObject>();
+    }
+
+    public virtual void getObj(string name, Action<Sprite> callBack, bool forceRemove = false)
+    {
+
+    }
+
+    public virtual void getObj(Action<GameObject> callBack, bool forceRemove = false)
     {
         if (cacheLst.Count > 0)
         {
@@ -59,34 +70,35 @@ public class BasePool : IDispose
                 {
                     Debug.LogError("加载资源失败 path " + resName);
                 }
-                else {
+                else
+                {
                     //都没有 先load ab
                     if (handler == null)
                     {
                         handler = new List<Action<GameObject>>();
                     }
                     handler.Add(callBack);
-                    LoadItemMgr.add(resName,resPath, loadFinish);
+                    LoadItemMgr.add(resName, resPath, loadFinish);
                 }
             }
         }
     }
 
     //ab load完成
-    private void loadFinish(string name)
+    protected virtual void loadFinish(string name)
     {
         if (handler != null)
         {
             for (int i = 0; i < handler.Count; i++)
             {
-                getObj(handler[i],true);
+                getObj(handler[i], true);
             }
             handler.Clear();
         }
     }
 
     //移除回调
-    public void removeHandler(Action<GameObject> callBack)
+    public virtual void removeHandler(Action<GameObject> callBack)
     {
         if (handler != null)
         {
@@ -98,7 +110,7 @@ public class BasePool : IDispose
     }
 
     //回收
-    public void recyle(GameObject go)
+    public virtual void recyle(GameObject go)
     {
         cacheLst.Add(go);
         go.transform.SetParent(this.poolRoot);
@@ -106,7 +118,7 @@ public class BasePool : IDispose
     }
 
     //销毁池
-    public void onDispose()
+    public virtual void onDispose()
     {
         LoadItemMgr.remove(resName, loadFinish);
         int count = cacheLst.Count;
