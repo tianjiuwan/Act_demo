@@ -146,10 +146,26 @@ public class BasePool : IDispose
     {
         LoadItemMgr.remove(resName, loadFinish);
         int count = cacheLst.Count;
+        //释放静态引用
         for (int i = 0; i < deps.Count; i++)
         {
-            AssetMgr.subRef(resName, count);
+            AssetMgr.subRef(deps[i], count);
         }
+        AssetMgr.subRef(resName, count);
+        //释放动态引用
+        for (int i = 0; i < cacheLst.Count; i++)
+        {
+            PoolObj po = cacheLst[i].GetComponent<PoolObj>();
+            if (po.getDepsNum() > 0)
+            {
+                List<string> dyDeps = po.getDeps();
+                for (int j = 0; j < dyDeps.Count; j++)
+                {
+                    AssetMgr.subRef(dyDeps[i]);
+                }
+            }
+        }
+        //销毁gameobject
         for (int i = 0; i < cacheLst.Count; i++)
         {
             GameObject.Destroy(cacheLst[i]);
@@ -158,6 +174,7 @@ public class BasePool : IDispose
         cacheLst = null;
         deps.Clear();
         deps = null;
+        GameObject.Destroy(this.poolRoot.gameObject);
     }
 }
 

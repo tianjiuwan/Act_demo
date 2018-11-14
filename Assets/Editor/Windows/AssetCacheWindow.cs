@@ -12,7 +12,7 @@ public class AssetCacheWindow : EditorWindow
     private static AssetCacheWindow _instance = null;
     private bool isInit = false;
 
-    [MenuItem("ToolsWindow/查看AB缓存")]
+    [MenuItem("ToolsWindow/查看AssetBundle")]
     public static void showWindow()
     {
         if (_instance == null)

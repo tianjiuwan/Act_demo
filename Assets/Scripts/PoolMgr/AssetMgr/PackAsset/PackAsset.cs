@@ -109,7 +109,6 @@ public class PackAsset : IDispose
         GameObject.DontDestroyOnLoad(go);
         PoolObj po = go.AddComponent<PoolObj>();
         po.resName = resName;
-        po.deps = this.deps;
         for (int i = 0; i < deps.Count; i++)
         {
             AssetMgr.addRef(deps[i]);
