@@ -17,6 +17,8 @@ public class BasePool : IDispose
     protected List<string> deps = null;
     protected List<GameObject> cacheLst = null;
     protected List<Action<GameObject>> handler = null;
+    protected Action<string> preLoadHandler = null;
+    protected int preLoadCount = 0;
 
     public BasePool(string resName, string resPath, E_PoolMode mode, E_PoolType pType, float time)
     {
@@ -84,6 +86,17 @@ public class BasePool : IDispose
         }
     }
 
+    //预加载
+    public virtual void preLoad(Action<string> preLoad, int preLoadCount = 0)
+    {
+        if (!AssetMgr.has(resName))
+        {
+            this.preLoadCount = preLoadCount;
+            this.preLoadHandler = preLoad;
+            LoadItemMgr.add(resName, resPath, onPerCreate);
+        }
+    }
+
     //ab load完成
     protected virtual void loadFinish(string name)
     {
@@ -94,6 +107,17 @@ public class BasePool : IDispose
                 getObj(handler[i], true);
             }
             handler.Clear();
+        }
+    }
+
+    //预创建完成
+    protected virtual void onPerCreate(string name)
+    {
+        loadFinish(name);
+        if (preLoadHandler != null)
+        {
+            preLoadHandler.Invoke(name);
+            preLoadHandler = null;
         }
     }
 

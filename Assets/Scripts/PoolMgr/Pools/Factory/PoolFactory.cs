@@ -13,6 +13,9 @@ public class PoolFactory
             case E_PoolType.Atlas:
                 p = new AtlasPool(resName, resPath, mode, pType, time);
                 break;
+            case E_PoolType.Model:
+                p = new ModelPool(resName, resPath, mode, pType, time);
+                break;
             default:
                 p = new BasePool(resName, resPath, mode, pType, time);
                 break;

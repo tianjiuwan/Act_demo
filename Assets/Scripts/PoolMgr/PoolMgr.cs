@@ -32,9 +32,7 @@ public class PoolMgr : Singleton<PoolMgr>, IDispose
     }
 
     //获取Sprite
-    //resName = ab name
-    //objName = asset name
-    public void getObj(string spName, Action<Sprite> callBack, E_PoolMode mode = E_PoolMode.Time, E_PoolType pType = E_PoolType.Atlas, float time = 60) 
+    public void getObj(string spName, Action<Sprite> callBack, E_PoolMode mode = E_PoolMode.Time, E_PoolType pType = E_PoolType.Atlas, float time = 60)
     {
         if (AtlasMgr.hasKey(spName))
         {
@@ -45,11 +43,33 @@ public class PoolMgr : Singleton<PoolMgr>, IDispose
                 BasePool p = PoolFactory.create(resName, resPath, mode, pType, time);
                 pools.Add(resName, p);
             }
-            pools[resName].getObj(spName,callBack);
+            pools[resName].getObj(spName, callBack);
         }
-        else {
+        else
+        {
             Debug.LogError("没有找到bundle名称 spName " + spName);
         }
+    }
+
+    /// <summary>
+    /// 预创建
+    /// </summary>
+    /// <param name="resName"></param>
+    /// <param name="callBack"></param>
+    /// <param name="mode"></param>
+    /// <param name="pType"></param>
+    /// <param name="preLoadCount"></param> 初始化个数
+    /// <param name="time"></param>
+    public void preLoad(string resName, Action<string> callBack, E_PoolMode mode, E_PoolType pType, int preLoadCount = 0, float time = 60)
+    {
+        resName = resName.ToLower();
+        if (!pools.ContainsKey(resName))
+        {
+            string resPath = Path.Combine(Define.abPre, resName).ToLower();
+            BasePool p = PoolFactory.create(resName, resPath, mode, pType, time);
+            pools.Add(resName, p);
+        }
+        pools[resName].preLoad(callBack, preLoadCount);
     }
 
     //移除
