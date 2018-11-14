@@ -19,14 +19,22 @@ public class PackAsset : IDispose
     private AssetBundle ab;
     private UnityEngine.Object obj;
     private int refCount = 0;
+    public int RefCount {
+        get {
+            return refCount;
+        }
+    }
     private E_LoadStatus status = E_LoadStatus.Wait;//bundle obj状态
     private List<Action<GameObject>> handler = null;
+    private List<string> deps = null;
 
     public PackAsset(string resName, string resPath, AssetBundle ab)
     {
         this.resName = resName;
         this.resPath = resPath;
         this.ab = ab;
+        deps = new List<string>();
+        ManifestMgr.getDeps(resName, ref deps);
         mainName = ab.GetAllAssetNames()[0];
     }
 
@@ -64,11 +72,7 @@ public class PackAsset : IDispose
     {
         if (obj != null)
         {
-            GameObject go = GameObject.Instantiate(obj) as GameObject;
-            GameObject.DontDestroyOnLoad(go);
-            PoolObj po = go.AddComponent<PoolObj>();
-            po.resName = resName;
-            callBack(go);
+            insObj(callBack);
         }
         else
         {
@@ -93,15 +97,25 @@ public class PackAsset : IDispose
         if (handler != null)
         {
             for (int i = 0; i < handler.Count; i++)
-            {                
-                GameObject go = GameObject.Instantiate(this.obj) as GameObject;
-                GameObject.DontDestroyOnLoad(go);
-                PoolObj po = go.AddComponent<PoolObj>();
-                po.resName = resName;
-                handler[i].Invoke(go);
+            {
+                insObj(handler[i]); 
             }
             handler.Clear();
         }
+    }
+
+    private void insObj(Action<GameObject> callBack) {
+        GameObject go = GameObject.Instantiate(this.obj) as GameObject;
+        GameObject.DontDestroyOnLoad(go);
+        PoolObj po = go.AddComponent<PoolObj>();
+        po.resName = resName;
+        po.deps = this.deps;
+        for (int i = 0; i < deps.Count; i++)
+        {
+            AssetMgr.addRef(deps[i]);
+        }
+        AssetMgr.addRef(resName);
+        callBack.Invoke(go);
     }
 
     //泛型获取 同步

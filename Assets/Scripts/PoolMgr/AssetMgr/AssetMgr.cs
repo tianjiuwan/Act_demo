@@ -10,6 +10,11 @@ public class AssetMgr : Singleton<AssetMgr>
         bundles = new Dictionary<string, PackAsset>();
     }
 
+    //提供编辑器查看
+    public Dictionary<string, PackAsset> getAll() {
+        return bundles;
+    }
+
     //是否有ab了
     private bool hasAsset(string name)
     {
