@@ -145,35 +145,43 @@ public class BasePool : IDispose
     public virtual void onDispose()
     {
         LoadItemMgr.remove(resName, loadFinish);
-        int count = cacheLst.Count;
-        //释放静态引用
-        for (int i = 0; i < deps.Count; i++)
+        if (cacheLst != null)
         {
-            AssetMgr.subRef(deps[i], count);
-        }
-        AssetMgr.subRef(resName, count);
-        //释放动态引用
-        for (int i = 0; i < cacheLst.Count; i++)
-        {
-            PoolObj po = cacheLst[i].GetComponent<PoolObj>();
-            if (po.getDepsNum() > 0)
+            int count = cacheLst.Count;
+            //释放静态引用
+            if (count > 0)
             {
-                List<string> dyDeps = po.getDeps();
-                for (int j = 0; j < dyDeps.Count; j++)
+                for (int i = 0; i < deps.Count; i++)
                 {
-                    AssetMgr.subRef(dyDeps[i]);
+                    AssetMgr.subRef(deps[i], count);
+                }
+                AssetMgr.subRef(resName, count);
+            }
+            //释放动态引用
+            for (int i = 0; i < cacheLst.Count; i++)
+            {
+                PoolObj po = cacheLst[i].GetComponent<PoolObj>();
+                if (po.getDepsNum() > 0)
+                {
+                    List<string> dyDeps = po.getDeps();
+                    for (int j = 0; j < dyDeps.Count; j++)
+                    {
+                        AssetMgr.subRef(dyDeps[i]);
+                    }
                 }
             }
+            //销毁gameobject
+            for (int i = 0; i < cacheLst.Count; i++)
+            {
+                GameObject.Destroy(cacheLst[i]);
+            }
+            cacheLst.Clear();
+            cacheLst = null;
         }
-        //销毁gameobject
-        for (int i = 0; i < cacheLst.Count; i++)
-        {
-            GameObject.Destroy(cacheLst[i]);
+        if (deps != null) {
+            deps.Clear();
+            deps = null;
         }
-        cacheLst.Clear();
-        cacheLst = null;
-        deps.Clear();
-        deps = null;
         GameObject.Destroy(this.poolRoot.gameObject);
     }
 }

@@ -85,12 +85,7 @@ public class PoolMgr : Singleton<PoolMgr>, IDispose
     public void preLoad(string resName, Action<string> callBack, E_PoolMode mode, E_PoolType pType, int preLoadCount = 0, float time = 60)
     {
         resName = resName.ToLower();
-        if (!pools.ContainsKey(resName))
-        {
-            string resPath = Path.Combine(Define.abPre, resName).ToLower();
-            BasePool p = PoolFactory.create(resName, resPath, mode, pType, time);
-            pools.Add(resName, p);
-        }
+        createPool(resName, mode, pType, time);
         pools[resName].preLoad(callBack, preLoadCount);
     }
 

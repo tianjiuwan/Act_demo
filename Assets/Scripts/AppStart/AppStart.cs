@@ -95,6 +95,12 @@ public class AppStart : MonoBehaviour
 
     private void OnGUI()
     {
+        //释放所有池子
+        if (GUILayout.Button("释放所有池子"))
+        {
+            PoolMgr.Instance.onDispose();
+        }
+
         //释放一个池子
         if (GUILayout.Button("释放一个池子"))
         {

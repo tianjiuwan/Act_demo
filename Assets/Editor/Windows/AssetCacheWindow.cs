@@ -53,15 +53,16 @@ public class AssetCacheWindow : EditorWindow
             GUILayout.BeginHorizontal();
             GUILayout.Space(20);
             StringBuilder builder = new StringBuilder();
-            builder.Append("Name: ");
+            builder.Append("<color=white>Name: ");
             builder.Append(lst[i].Name);
+            builder.Append("</color>");
             GUIContent content = new GUIContent();
             content.text = builder.ToString();
             GUIStyle style = new GUIStyle();
             style.fontSize = 12;
             GUILayout.Box(content, style, GUILayout.Width(600), GUILayout.Height(40));
             style.fontSize = 16;
-            content.text = "RefCount: " + lst[i].RefCount;
+            content.text = "<color=red>RefCount: " + lst[i].RefCount+ "</color>";
             GUILayout.Box(content, style, GUILayout.Width(100), GUILayout.Height(40));
             GUILayout.EndHorizontal();
         }
