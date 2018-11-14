@@ -73,11 +73,16 @@ public class PoolMgr : Singleton<PoolMgr>, IDispose
     }
 
     //移除
-    public void remove(string resName, Action<GameObject> callBack)
+    public void unLoad(string resName, Action<GameObject> callBack)
     {
+        resName = resName.ToLower();
         if (pools.ContainsKey(resName))
         {
             pools[resName].removeHandler(callBack);
+        }
+        if (AssetMgr.has(resName)) {
+            PackAsset pka = AssetMgr.get(resName);
+            pka.remove(callBack);
         }
     }
 

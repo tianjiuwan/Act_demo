@@ -31,19 +31,23 @@ public class AppStart : MonoBehaviour
     }
 
 
+    private void onLoadUEManFinish(GameObject go) {
+        roleObj = go;
+        roleObj.transform.position = Vector3.zero;
+        //watch.Stop();
+        UnityEngine.Debug.LogError("实例化role_ueman成功");
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            watch.Start();
+            //watch.Start();
             string role = "AssetBundle/Prefabs/model/role_ueman/model/role_ueman";
-            PoolMgr.Instance.getObj(role, (go) =>
-            {
-                roleObj = go;
-                roleObj.transform.position = Vector3.zero;
-                watch.Stop();
-                UnityEngine.Debug.LogError("耗时： " + watch.ElapsedMilliseconds.ToString());
-            });
+            UnityEngine.Debug.LogError("加载role_ueman");
+            PoolMgr.Instance.getObj(role, onLoadUEManFinish);
+            UnityEngine.Debug.LogError("取消加载role_ueman");
+            PoolMgr.Instance.unLoad(role, onLoadUEManFinish);
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
