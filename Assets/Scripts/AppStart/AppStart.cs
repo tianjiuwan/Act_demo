@@ -134,7 +134,7 @@ public class AppStart : MonoBehaviour
         {
             if (img != null)
             {
-                string spName = "chosenKuang".ToLower();
+                string spName = "CZ_5".ToLower();
                 PoolMgr.Instance.getObj(spName, (sp) =>
                 {
                     img.sprite = sp;

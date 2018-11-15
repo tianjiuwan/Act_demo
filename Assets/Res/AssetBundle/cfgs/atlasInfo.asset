@@ -411,6 +411,16 @@ MonoBehaviour:
   - zjm_shouling
   - zjm_sjsl
   - zjm_toumu
+  - cz_0
+  - cz_1
+  - cz_2
+  - cz_3
+  - cz_4
+  - cz_5
+  - cz_6
+  - cz_7
+  - cz_8
+  - cz_9
   abs:
   - assetbundle/atlas/commonatlas
   - assetbundle/atlas/commonatlas
@@ -811,3 +821,13 @@ MonoBehaviour:
   - assetbundle/atlas/titleatlas
   - assetbundle/atlas/titleatlas
   - assetbundle/atlas/titleatlas
+  - assetbundle/textures/common/cz_0
+  - assetbundle/textures/common/cz_1
+  - assetbundle/textures/common/cz_2
+  - assetbundle/textures/common/cz_3
+  - assetbundle/textures/common/cz_4
+  - assetbundle/textures/common/cz_5
+  - assetbundle/textures/common/cz_6
+  - assetbundle/textures/common/cz_7
+  - assetbundle/textures/common/cz_8
+  - assetbundle/textures/common/cz_9

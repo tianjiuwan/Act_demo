@@ -153,6 +153,7 @@ public class BuildAsset
 
     //atals资源路径
     private const string atlasPath = "Res/AssetBundle/Atlas";
+    private const string texturesPath = "Res/AssetBundle/Textures";
     private const string atlasBundlePre = "AssetBundle/Atlas/";
     private const string atlasCfgName = "Res/AssetBundle/cfgs/atlasCfg.txt";
     [MenuItem("Assets/打包相关/导出图集配置", false, 6001)]
@@ -207,21 +208,11 @@ public class BuildAsset
         Dictionary<string, string> map = new Dictionary<string, string>();
         //遍历atlas下面的所有文件夹
         List<string> floders = FileUtils.getAllFolder(Path.Combine(Application.dataPath, atlasPath));
-        //存一个字典 key = iconName val = path(assetBundleName)
-        for (int i = 0; i < floders.Count; i++)
-        {
-            string[] files = Directory.GetFiles(floders[i]);
-            for (int k = 0; k < files.Length; k++)
-            {
-                if (files[k].EndsWith(".meta")) continue;
-                if (files[k].EndsWith(".txt")) continue;
-                string iconName = Path.GetFileNameWithoutExtension(files[k]);
-                int index = floders[i].IndexOf("AssetBundle");
-                string bundleName = floders[i].Substring(index);
-                bundleName = bundleName.Replace("\\", "/").ToLower();
-                map.Add(iconName.ToLower(), bundleName);
-            }
-        }
+        addSpriteToMap(floders, map);
+        //还有textures下面的散图
+        List<string> flodersTextures = FileUtils.getAllFolder(Path.Combine(Application.dataPath, texturesPath));
+        addSpriteToMap(flodersTextures, map, false);
+
         //删除一下文件
         string cfg = Path.Combine(Application.dataPath, atlasInfoPath);
         if (File.Exists(cfg))
@@ -234,6 +225,30 @@ public class BuildAsset
         string path = Path.Combine("Assets", atlasInfoPath);
         AssetDatabase.CreateAsset(info, path);
         AssetDatabase.Refresh();
+    }
+
+    private static void addSpriteToMap(List<string> floders, Dictionary<string, string> map, bool isAtlas = true)
+    {
+        //存一个字典 key = iconName val = path(assetBundleName)
+        for (int i = 0; i < floders.Count; i++)
+        {
+            string[] files = Directory.GetFiles(floders[i]);
+            for (int k = 0; k < files.Length; k++)
+            {
+                if (files[k].EndsWith(".meta")) continue;
+                if (files[k].EndsWith(".txt")) continue;
+                string iconName = Path.GetFileNameWithoutExtension(files[k]);
+                iconName = iconName.ToLower();
+                int index = floders[i].IndexOf("AssetBundle");
+                string bundleName = floders[i].Substring(index);
+                bundleName = bundleName.Replace("\\", "/").ToLower();
+                if (!isAtlas)
+                {
+                    bundleName = bundleName + "/" + iconName;
+                }
+                map.Add(iconName, bundleName);
+            }
+        }
     }
 
 }
