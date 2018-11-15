@@ -10,7 +10,7 @@ public class AppStart : MonoBehaviour
     [SerializeField]
     private Image img = null;
 
-    private int preNum = 0;
+    private int preNum = 15;
     private int loadedNum = 0;
     private Dictionary<E_PoolType, List<string>> preLoads = new Dictionary<E_PoolType, List<string>>();
     Stopwatch watch = new Stopwatch();
@@ -18,10 +18,23 @@ public class AppStart : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        //图集ab
         preLoads.Add(E_PoolType.Atlas, new List<string>());
         preLoads[E_PoolType.Atlas].Add("assetbundle/atlas/commonatlas");
         preLoads[E_PoolType.Atlas].Add("assetbundle/atlas/facebookatlas");
         preLoads[E_PoolType.Atlas].Add("assetbundle/atlas/teamatlas");
+        //ui prefab
+        preLoads.Add(E_PoolType.UICache, new List<string>());
+        preLoads[E_PoolType.UICache].Add("assetbundle/prefabs/ui/bottommidui");
+        preLoads[E_PoolType.UICache].Add("assetbundle/prefabs/ui/BottomSkillUI");
+        preLoads[E_PoolType.UICache].Add("assetbundle/prefabs/ui/FaceBookUI");
+        preLoads[E_PoolType.UICache].Add("assetbundle/prefabs/ui/GuildUI");
+        preLoads[E_PoolType.UICache].Add("assetbundle/prefabs/ui/JoyStickUI");
+        preLoads[E_PoolType.UICache].Add("assetbundle/prefabs/ui/SkillUI");
+        preLoads[E_PoolType.UICache].Add("assetbundle/prefabs/ui/TopLeftUI");
+        preLoads[E_PoolType.UICache].Add("assetbundle/prefabs/ui/UICanvas");
+        preLoads[E_PoolType.UICache].Add("assetbundle/prefabs/ui/UpDownAnimUI");
+        //model prefab
         preLoads.Add(E_PoolType.Model, new List<string>());
         preLoads[E_PoolType.Model].Add("assetbundle/prefabs/model/role_ueman/model/role_ueman");
         preLoads[E_PoolType.Model].Add("assetbundle/prefabs/model/role_fistgirl/model/role_fistgirl");
@@ -40,6 +53,7 @@ public class AppStart : MonoBehaviour
         UnityEngine.Debug.LogError("实例化role_ueman成功");
     }
 
+    /*
     private void testUpdate()
     {
         //创建一个模型
@@ -82,7 +96,7 @@ public class AppStart : MonoBehaviour
             foreach (var item in preLoads)
             {
                 E_PoolType pType = item.Key;
-                int cacheCount = pType == E_PoolType.Model ? 3 : 0;
+                int cacheCount = pType == E_PoolType.Model ? 3 : pType == E_PoolType.UICache ? 2 : 0;
                 for (int i = 0; i < item.Value.Count; i++)
                 {
                     preNum++;
@@ -92,10 +106,18 @@ public class AppStart : MonoBehaviour
         }
 
     }
-
+    
+    */
 
     private void OnGUI()
     {
+
+        //释放所有ab
+        if (GUILayout.Button("释放所有ab"))
+        {
+            AssetMgr.dispose(true);
+        }
+
         //释放所有池子
         if (GUILayout.Button("释放所有池子"))
         {
@@ -109,7 +131,7 @@ public class AppStart : MonoBehaviour
             {
                 string resName = roleObj.GetComponent<PoolObj>().resName;
                 PoolMgr.Instance.disposePool(resName);
-                UnityEngine.Debug.LogError("释放池子 "+ resName);
+                UnityEngine.Debug.LogError("释放池子 " + resName);
             }
         }
 
@@ -153,23 +175,25 @@ public class AppStart : MonoBehaviour
             foreach (var item in preLoads)
             {
                 E_PoolType pType = item.Key;
-                int cacheCount = pType == E_PoolType.Model ? 3 : 0;
+                int cacheCount = pType == E_PoolType.Model ? 3 : pType == E_PoolType.UICache ? 2 : 0;
                 for (int i = 0; i < item.Value.Count; i++)
                 {
-                    preNum++;
                     PoolMgr.Instance.preLoad(item.Value[i], preLoadCount, E_PoolMode.Overall, pType, cacheCount);
                 }
             }
         }
     }
 
+
     private void preLoadCount(string name)
     {
         loadedNum++;
         if (loadedNum >= preNum)
         {
-            watch.Stop();
+            loadedNum = 0;
+            watch.Stop();            
             UnityEngine.Debug.LogError("预加载完成  耗时： " + watch.ElapsedMilliseconds.ToString());
+            watch.Reset();
         }
     }
 

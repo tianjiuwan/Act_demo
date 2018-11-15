@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 3511681398
+CRC: 486179188
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -224,6 +224,7 @@ AssetBundleManifest:
       Name: assetbundle/prefabs/model/role_superman/model/role_superman
       Dependencies:
         Dependency_0: assetbundle/prefabs/model/role_superman/animator/role_superman_controller
+        Dependency_1: assetbundle/materials/roleman
     Info_67:
       Name: assetbundle/prefabs/model/role_fistgirl/clips/attack5
       Dependencies: {}
@@ -357,4 +358,12 @@ AssetBundleManifest:
       Dependencies: {}
     Info_96:
       Name: assetbundle/cfgs/atlasinfo
+      Dependencies: {}
+    Info_97:
+      Name: assetbundle/materials/roleman
+      Dependencies:
+        Dependency_0: assetbundle/modeltextures/role_mimi
+        Dependency_1: assetbundle/shader/rolemain
+    Info_98:
+      Name: assetbundle/shader/rolemain
       Dependencies: {}

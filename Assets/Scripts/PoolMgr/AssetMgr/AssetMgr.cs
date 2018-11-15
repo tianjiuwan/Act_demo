@@ -11,7 +11,8 @@ public class AssetMgr : Singleton<AssetMgr>
     }
 
     //提供编辑器查看
-    public Dictionary<string, PackAsset> getAll() {
+    public Dictionary<string, PackAsset> getAll()
+    {
         return bundles;
     }
 
@@ -21,7 +22,8 @@ public class AssetMgr : Singleton<AssetMgr>
         return bundles.ContainsKey(name);
     }
 
-    private void addAsset(PackAsset ab) {
+    private void addAsset(PackAsset ab)
+    {
         bundles.Add(ab.Name, ab);
     }
 
@@ -34,14 +36,23 @@ public class AssetMgr : Singleton<AssetMgr>
     {
         bundles[name].addRef();
     }
-    private void subRefCount(string name,int count)
+    private void subRefCount(string name, int count)
     {
         bundles[name].subRef(count);
     }
 
     public void onDispose()
     {
+        disposeAll();
+    }
 
+    private void disposeAll(bool forceUnload = false)
+    {
+        foreach (var item in bundles)
+        {
+            item.Value.unload(forceUnload);
+        }
+        bundles.Clear();
     }
 
     #region 提供接口
@@ -55,7 +66,8 @@ public class AssetMgr : Singleton<AssetMgr>
         return Instance.getAsset(name);
     }
 
-    public static void add(PackAsset ab) {
+    public static void add(PackAsset ab)
+    {
         Instance.addAsset(ab);
     }
 
@@ -63,9 +75,14 @@ public class AssetMgr : Singleton<AssetMgr>
     {
         Instance.bundles[name].addRef();
     }
-    public static void subRef(string name,int count =1)
+    public static void subRef(string name, int count = 1)
     {
         Instance.bundles[name].subRef(count);
+    }
+
+    public static void dispose(bool forceUnload = false)
+    {
+        Instance.disposeAll(forceUnload);
     }
     #endregion
 }

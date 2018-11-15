@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1257442521
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 30c6d3aa20a8bc4ea3de5db3f3a2f88e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: abb9b9167ab0d9f4af2beeb617361f49
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/Materials/RoleMan.mat
+Dependencies:
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/role_mimi
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/shader/rolemain

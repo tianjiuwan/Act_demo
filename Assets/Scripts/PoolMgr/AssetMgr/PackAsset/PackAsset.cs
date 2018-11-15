@@ -19,8 +19,10 @@ public class PackAsset : IDispose
     private AssetBundle ab;
     private UnityEngine.Object obj;
     private int refCount = 0;
-    public int RefCount {
-        get {
+    public int RefCount
+    {
+        get
+        {
             return refCount;
         }
     }
@@ -98,13 +100,14 @@ public class PackAsset : IDispose
         {
             for (int i = 0; i < handler.Count; i++)
             {
-                insObj(handler[i]); 
+                insObj(handler[i]);
             }
             handler.Clear();
         }
     }
 
-    private void insObj(Action<GameObject> callBack) {
+    private void insObj(Action<GameObject> callBack)
+    {
         GameObject go = GameObject.Instantiate(this.obj) as GameObject;
         GameObject.DontDestroyOnLoad(go);
         PoolObj po = go.AddComponent<PoolObj>();
@@ -130,13 +133,35 @@ public class PackAsset : IDispose
 
     IEnumerator getObjAsync<T>(string name, Action<T> callBack) where T : UnityEngine.Object
     {
-        AssetBundleRequest req =  ab.LoadAssetAsync<T>(name);
+        AssetBundleRequest req = ab.LoadAssetAsync<T>(name);
         yield return req;
         callBack(req.asset as T);
     }
     public void onDispose()
     {
+        unload();
+    }
 
+    public void unload(bool forceUnload = false)
+    {
+        resName = null;
+        resPath = null;
+        mainName = null;
+        obj = null;
+        if (handler != null)
+        {
+            handler.Clear();
+            handler = null;
+        }
+        if (deps != null)
+        {
+            deps.Clear();
+            deps = null;
+        }
+        if (ab != null)
+        {
+            ab.Unload(forceUnload);
+        }
     }
 }
 

@@ -16,7 +16,7 @@ public class LoadItemMgr : Singleton<LoadItemMgr>
     {
         if (!hasItem(resName))
         {
-            LoadItem item = new LoadItem(resName, resPath, onFinish);
+            LoadItem item = new LoadItem(resName, resPath, onFinish, onItemFinish);
             loadMap.Add(resName, item);
         }
         else
@@ -24,6 +24,14 @@ public class LoadItemMgr : Singleton<LoadItemMgr>
             loadMap[resName].addHandler(onFinish);
         }
     }
+
+    //item完成
+    private void onItemFinish(string name) {
+        if (loadMap.ContainsKey(name)) {
+            loadMap.Remove(name);
+        }
+    }
+
     //移除
     private void removeItem(string name, Action<string> onFinish)
     {

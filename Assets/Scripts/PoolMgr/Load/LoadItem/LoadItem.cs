@@ -7,10 +7,11 @@ public class LoadItem
 {
     private string resName;
     private string resPath;
-    public LoadItem(string resName, string resPath,Action<string> callBack) {
+    public LoadItem(string resName, string resPath,Action<string> callBack, Action<string> itemFinish) {
         this.resName = resName;
         this.resPath = resPath;
         initDeps();
+        addHandler(itemFinish);
         addHandler(callBack);
         onStart();       
     }

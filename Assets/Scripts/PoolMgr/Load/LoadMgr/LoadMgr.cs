@@ -20,7 +20,7 @@ public class LoadMgr : Singleton<LoadMgr>, IDispose
     private void onLoadFinish(string resName)
     {
         if (loadMap.ContainsKey(resName))
-        {
+        {            
             loadMap.Remove(resName);
         }
     }

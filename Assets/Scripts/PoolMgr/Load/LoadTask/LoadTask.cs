@@ -16,6 +16,7 @@ public class LoadTask
     }
 
     private E_LoadStatus status = E_LoadStatus.Wait;//bundle 状态
+
     //完成回调
     private List<Action<string>> handler = new List<Action<string>>();
     public void addHandler(Action<string> callBack)
@@ -34,7 +35,7 @@ public class LoadTask
         AssetMgr.add(new PackAsset(resName, resPath, req.assetBundle));
         for (int i = 0; i < handler.Count; i++)
         {
-            handler[i].Invoke(resPath);
+            handler[i].Invoke(resName);
         }
         status = E_LoadStatus.Finish;
     }

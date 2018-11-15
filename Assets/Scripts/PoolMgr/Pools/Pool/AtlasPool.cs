@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AtlasPool : BasePool
+public class AtlasPool : BaseBundlePool
 {   
     private new  Dictionary<string, List<Action<Sprite>>> handler = null; 
 

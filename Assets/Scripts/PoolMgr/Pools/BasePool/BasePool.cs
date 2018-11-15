@@ -48,9 +48,9 @@ public class BasePool : IDispose
 
     }
 
-    public virtual void getObj(Action<GameObject> callBack, bool forceRemove = false)
+    public virtual void getObj(Action<GameObject> callBack, bool forceRemove = false, int count = 0)
     {
-        if (cacheLst.Count > 0)
+        if (cacheLst.Count > count)
         {
             //缓存池有
             GameObject obj = cacheLst[0];
@@ -89,11 +89,18 @@ public class BasePool : IDispose
     //预加载
     public virtual void preLoad(Action<string> preLoad, int preLoadCount = 0)
     {
+        this.preLoadCount = preLoadCount;
+        this.preLoadHandler = preLoad;
         if (!AssetMgr.has(resName))
         {
-            this.preLoadCount = preLoadCount;
-            this.preLoadHandler = preLoad;
+            if (cacheLst != null && cacheLst.Count > 0) {
+                Debug.LogError("预创建错误 gameobject池子有缓存 但是assetbundle已经不存在(可能造成预设资源丢失)");
+            }
             LoadItemMgr.add(resName, resPath, onPerCreate);
+        }
+        else
+        {
+            onPerCreate(resName);
         }
     }
 
@@ -178,7 +185,8 @@ public class BasePool : IDispose
             cacheLst.Clear();
             cacheLst = null;
         }
-        if (deps != null) {
+        if (deps != null)
+        {
             deps.Clear();
             deps = null;
         }
