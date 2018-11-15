@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 3971080626
+CRC: 728203694
 Hashes:
   AssetFileHash:
     serializedVersion: 2
@@ -24,6 +24,6 @@ ClassTypes:
 Assets:
 - Assets/Res/AssetBundle/Prefabs/ui/TestUI.prefab
 Dependencies:
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/atlas/commonatlas
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/atlas/teamatlas
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/atlas/skillatlas
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/atlas/commonatlas
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/atlas/skillatlas
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/atlas/teamatlas

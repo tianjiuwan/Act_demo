@@ -59,6 +59,7 @@ public class BuildAsset
             if (imp != null)
             {
                 abName = aPath.EndsWith(atlasPathSuff) ? getAbName(aPath) : getAbName(files[k]);
+                abName = abName.Replace(@"\", "/");
                 imp.assetBundleName = abName;
                 EditorUtility.SetDirty(imp);
             }
@@ -198,5 +199,42 @@ public class BuildAsset
         fs.Dispose();
         AssetDatabase.Refresh();
     }
+
+    private const string atlasInfoPath = "Res/AssetBundle/cfgs/atlasInfo.asset";
+    [MenuItem("Assets/打包相关/导出图集配置ScriptTable", false, 6002)]
+    public static void exportAtlasCfg2()
+    {
+        Dictionary<string, string> map = new Dictionary<string, string>();
+        //遍历atlas下面的所有文件夹
+        List<string> floders = FileUtils.getAllFolder(Path.Combine(Application.dataPath, atlasPath));
+        //存一个字典 key = iconName val = path(assetBundleName)
+        for (int i = 0; i < floders.Count; i++)
+        {
+            string[] files = Directory.GetFiles(floders[i]);
+            for (int k = 0; k < files.Length; k++)
+            {
+                if (files[k].EndsWith(".meta")) continue;
+                if (files[k].EndsWith(".txt")) continue;
+                string iconName = Path.GetFileNameWithoutExtension(files[k]);
+                int index = floders[i].IndexOf("AssetBundle");
+                string bundleName = floders[i].Substring(index);
+                bundleName = bundleName.Replace("\\", "/").ToLower();
+                map.Add(iconName.ToLower(), bundleName);
+            }
+        }
+        //删除一下文件
+        string cfg = Path.Combine(Application.dataPath, atlasInfoPath);
+        if (File.Exists(cfg))
+        {
+            File.Delete(cfg);
+        }
+        AtlasInfo info = ScriptableObject.CreateInstance<AtlasInfo>();
+        info.keys.AddRange(map.Keys);
+        info.abs.AddRange(map.Values);
+        string path = Path.Combine("Assets", atlasInfoPath);
+        AssetDatabase.CreateAsset(info, path);
+        AssetDatabase.Refresh();
+    }
+
 }
 

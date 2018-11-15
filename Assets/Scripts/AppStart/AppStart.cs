@@ -28,6 +28,7 @@ public class AppStart : MonoBehaviour
         preLoads[E_PoolType.Model].Add("assetbundle/prefabs/model/role_superman/model/role_superman");
 
         ManifestMgr.Init();
+        AtlasMgr.Instance.Init();
     }
 
 

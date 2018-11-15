@@ -3,7 +3,7 @@ CRC: 671157357
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: bdc44a687fbf6a688172c46a80e70fec
+    Hash: 0c08f3e1640eca4971a21c96df922592
   TypeTreeHash:
     serializedVersion: 2
     Hash: df221c2f2e80a232c0b8bb8be59cfbba
@@ -34,4 +34,4 @@ ClassTypes:
 Assets:
 - Assets/Res/AssetBundle/Prefabs/ui/UpDownAnimUI.prefab
 Dependencies:
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/atlas/facebookatlas
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/atlas/facebookatlas

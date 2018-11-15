@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 109792339
+CRC: 1260938564
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 353803859b0cf0938d23967d2fee8a10
+    Hash: a815aad4b146cae2e1f0e60e5dcc9730
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 9eba002509db66137744584f94c8142b
+    Hash: 6fbce3ef9a5fc5659b1adb35d7d47216
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -16,8 +16,6 @@ ClassTypes:
 - Class: 20
   Script: {instanceID: 0}
 - Class: 21
-  Script: {instanceID: 0}
-- Class: 28
   Script: {instanceID: 0}
 - Class: 43
   Script: {instanceID: 0}
@@ -34,6 +32,4 @@ ClassTypes:
 Assets:
 - Assets/Res/AssetBundle/Prefabs/Model/role_fistgirl/model/role_fistgirl.prefab
 Dependencies:
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/animator/role_fistgirl_controller
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/12
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/3dch2040_1
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/animator/role_fistgirl_controller

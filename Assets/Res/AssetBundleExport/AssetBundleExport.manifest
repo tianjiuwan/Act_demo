@@ -1,741 +1,360 @@
 ManifestFileVersion: 0
-CRC: 201455209
+CRC: 2257914343
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: assetbundle/atlas/commonatlas
       Dependencies: {}
     Info_1:
-      Name: assetbundle/atlas/facebookatlas
+      Name: assetbundle/atlas/playerskillatlas
       Dependencies: {}
     Info_2:
-      Name: assetbundle/atlas/teamatlas
+      Name: assetbundle/atlas/skillatlas
       Dependencies: {}
     Info_3:
-      Name: assetbundle/prefabs/ui/testui
-      Dependencies:
-        Dependency_0: assetbundle/atlas/commonatlas
-        Dependency_1: assetbundle/atlas/teamatlas
-        Dependency_2: assetbundle/atlas/skillatlas
-    Info_4:
-      Name: assetbundle/textures/common/cz_0
-      Dependencies: {}
-    Info_5:
-      Name: assetbundle/textures/common/cz_1
-      Dependencies: {}
-    Info_6:
-      Name: assetbundle/textures/common/cz_2
-      Dependencies: {}
-    Info_7:
-      Name: assetbundle/textures/common/cz_3
-      Dependencies: {}
-    Info_8:
-      Name: assetbundle/textures/common/cz_4
-      Dependencies: {}
-    Info_9:
-      Name: assetbundle/textures/common/cz_5
-      Dependencies: {}
-    Info_10:
-      Name: assetbundle/textures/common/cz_6
-      Dependencies: {}
-    Info_11:
-      Name: assetbundle/textures/common/cz_7
-      Dependencies: {}
-    Info_12:
-      Name: assetbundle/textures/common/cz_8
-      Dependencies: {}
-    Info_13:
-      Name: assetbundle/textures/common/cz_9
-      Dependencies: {}
-    Info_14:
-      Name: assetbundle/cfgs/atlascfg
-      Dependencies: {}
-    Info_15:
       Name: assetbundle/atlas/guildatlas
       Dependencies: {}
+    Info_4:
+      Name: assetbundle/atlas/titleatlas
+      Dependencies: {}
+    Info_5:
+      Name: assetbundle/modeltextures/ground 1
+      Dependencies: {}
+    Info_6:
+      Name: assetbundle/textures/common/cz_0
+      Dependencies: {}
+    Info_7:
+      Name: assetbundle/atlas/teamatlas
+      Dependencies: {}
+    Info_8:
+      Name: assetbundle/textures/common/cz_6
+      Dependencies: {}
+    Info_9:
+      Name: assetbundle/modeltextures/zz_bg
+      Dependencies: {}
+    Info_10:
+      Name: assetbundle/modeltextures/circle
+      Dependencies: {}
+    Info_11:
+      Name: assetbundle/atlas/facebookatlas
+      Dependencies: {}
+    Info_12:
+      Name: assetbundle/textures/common/cz_5
+      Dependencies: {}
+    Info_13:
+      Name: assetbundle/textures/common/cz_1
+      Dependencies: {}
+    Info_14:
+      Name: assetbundle/modeltextures/noisewhite
+      Dependencies: {}
+    Info_15:
+      Name: assetbundle/modeltextures/b
+      Dependencies: {}
     Info_16:
-      Name: assetbundle/prefabs/model/role_superman/animator/role_superman_controller
-      Dependencies:
-        Dependency_0: assetbundle/prefabs/model/role_superman/clips/die
-        Dependency_1: assetbundle/prefabs/model/role_superman/clips/idle
-        Dependency_2: assetbundle/prefabs/model/role_superman/clips/run
-        Dependency_3: assetbundle/prefabs/model/role_superman/clips/attack
-        Dependency_4: assetbundle/prefabs/model/role_superman/clips/hart
-        Dependency_5: assetbundle/prefabs/model/role_superman/clips/jumpdown
-        Dependency_6: assetbundle/prefabs/model/role_superman/clips/jumpup
-        Dependency_7: assetbundle/prefabs/model/role_superman/clips/liedown
+      Name: assetbundle/textures/common/cz_8
+      Dependencies: {}
     Info_17:
-      Name: assetbundle/prefabs/model/role_superman/clips/die
+      Name: assetbundle/modeltextures/role_mimi
       Dependencies: {}
     Info_18:
-      Name: assetbundle/prefabs/model/role_superman/clips/idle
+      Name: assetbundle/textures/common/cz_7
       Dependencies: {}
     Info_19:
-      Name: assetbundle/prefabs/model/role_superman/clips/run
+      Name: assetbundle/modeltextures/o
       Dependencies: {}
     Info_20:
-      Name: assetbundle/prefabs/model/role_superman/model/role_superman
-      Dependencies:
-        Dependency_0: assetbundle/prefabs/model/role_superman/animator/role_superman_controller
+      Name: assetbundle/modeltextures/role_001
+      Dependencies: {}
     Info_21:
-      Name: assetbundle/prefabs/model/role_superman/clips/attack
+      Name: assetbundle/modeltextures/beam
       Dependencies: {}
     Info_22:
-      Name: assetbundle/prefabs/model/role_superman/clips/hart
+      Name: assetbundle/textures/common/cz_9
       Dependencies: {}
     Info_23:
-      Name: assetbundle/prefabs/model/role_superman/clips/jumpdown
+      Name: assetbundle/modeltextures/circle2
       Dependencies: {}
     Info_24:
-      Name: assetbundle/prefabs/model/role_superman/clips/jumpup
+      Name: assetbundle/textures/common/cz_2
       Dependencies: {}
     Info_25:
-      Name: assetbundle/prefabs/model/role_superman/clips/liedown
+      Name: assetbundle/modeltextures/bg
       Dependencies: {}
     Info_26:
-      Name: assetbundle/materials/ground
-      Dependencies:
-        Dependency_0: assetbundle/modeltextures/ground
+      Name: assetbundle/modeltextures/noisedark
+      Dependencies: {}
     Info_27:
+      Name: assetbundle/modeltextures/ground
+      Dependencies: {}
+    Info_28:
+      Name: assetbundle/textures/common/cz_4
+      Dependencies: {}
+    Info_29:
+      Name: assetbundle/textures/common/cz_3
+      Dependencies: {}
+    Info_30:
+      Name: assetbundle/shader/tuidefault
+      Dependencies: {}
+    Info_31:
+      Name: assetbundle/shader/uihead
+      Dependencies: {}
+    Info_32:
+      Name: assetbundle/shader/uienergy
+      Dependencies: {}
+    Info_33:
+      Name: assetbundle/shader/terrain
+      Dependencies: {}
+    Info_34:
       Name: assetbundle/materials/role_001
       Dependencies:
         Dependency_0: assetbundle/modeltextures/role_001
-    Info_28:
-      Name: assetbundle/modeltextures/ground
-      Dependencies: {}
-    Info_29:
-      Name: assetbundle/modeltextures/role_001
-      Dependencies: {}
-    Info_30:
-      Name: assetbundle/prefabs/model/role_fistgirl/animator/role_fistgirl_controller
-      Dependencies:
-        Dependency_0: assetbundle/prefabs/model/role_fistgirl/clips/attack1
-        Dependency_1: assetbundle/prefabs/model/role_fistgirl/clips/attack2
-        Dependency_2: assetbundle/prefabs/model/role_fistgirl/clips/attack3
-        Dependency_3: assetbundle/prefabs/model/role_fistgirl/clips/attack4
-        Dependency_4: assetbundle/prefabs/model/role_fistgirl/clips/attack5
-        Dependency_5: assetbundle/prefabs/model/role_fistgirl/clips/attack6
-        Dependency_6: assetbundle/prefabs/model/role_fistgirl/clips/attack7
-        Dependency_7: assetbundle/prefabs/model/role_fistgirl/clips/attack8
-        Dependency_8: assetbundle/prefabs/model/role_fistgirl/clips/ueattack
-    Info_31:
-      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack1
-      Dependencies: {}
-    Info_32:
-      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack2
-      Dependencies: {}
-    Info_33:
-      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack3
-      Dependencies: {}
-    Info_34:
-      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack4
-      Dependencies: {}
     Info_35:
-      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack5
-      Dependencies: {}
-    Info_36:
-      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack6
-      Dependencies: {}
-    Info_37:
-      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack7
-      Dependencies: {}
-    Info_38:
-      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack8
-      Dependencies: {}
-    Info_39:
-      Name: assetbundle/prefabs/model/role_fistgirl/clips/ueattack
-      Dependencies: {}
-    Info_40:
-      Name: assetbundle/prefabs/model/role_fistgirl/model/role_fistgirl
-      Dependencies:
-        Dependency_0: assetbundle/prefabs/model/role_fistgirl/animator/role_fistgirl_controller
-        Dependency_1: assetbundle/modeltextures/12
-        Dependency_2: assetbundle/modeltextures/3dch2040_1
-    Info_41:
-      Name: assetbundle/prefabs/model/role_ueman/animator/role_ueman_controller
-      Dependencies:
-        Dependency_0: assetbundle/prefabs/model/role_ueman/clips/attack1
-        Dependency_1: assetbundle/prefabs/model/role_ueman/clips/attack2
-        Dependency_2: assetbundle/prefabs/model/role_ueman/clips/behit1
-        Dependency_3: assetbundle/prefabs/model/role_ueman/clips/behit2
-        Dependency_4: assetbundle/prefabs/model/role_ueman/clips/die
-        Dependency_5: assetbundle/prefabs/model/role_ueman/clips/fistleftgo
-        Dependency_6: assetbundle/prefabs/model/role_ueman/clips/fistthreego
-        Dependency_7: assetbundle/prefabs/model/role_ueman/clips/fisttwogo
-        Dependency_8: assetbundle/prefabs/model/role_ueman/clips/getup
-        Dependency_9: assetbundle/prefabs/model/role_ueman/clips/idle
-        Dependency_10: assetbundle/prefabs/model/role_ueman/clips/jumpdown
-        Dependency_11: assetbundle/prefabs/model/role_ueman/clips/jumpup
-        Dependency_12: assetbundle/prefabs/model/role_ueman/clips/fistrightgo
-        Dependency_13: assetbundle/prefabs/model/role_ueman/clips/leftleggo
-        Dependency_14: assetbundle/prefabs/model/role_ueman/clips/jumploop
-        Dependency_15: assetbundle/prefabs/model/role_ueman/clips/bowright
-        Dependency_16: assetbundle/prefabs/model/role_ueman/clips/run
-    Info_42:
-      Name: assetbundle/prefabs/model/role_ueman/clips/attack1
-      Dependencies: {}
-    Info_43:
-      Name: assetbundle/prefabs/model/role_ueman/clips/attack2
-      Dependencies: {}
-    Info_44:
-      Name: assetbundle/prefabs/model/role_ueman/clips/behit1
-      Dependencies: {}
-    Info_45:
-      Name: assetbundle/prefabs/model/role_ueman/clips/behit2
-      Dependencies: {}
-    Info_46:
-      Name: assetbundle/prefabs/model/role_ueman/clips/die
-      Dependencies: {}
-    Info_47:
-      Name: assetbundle/prefabs/model/role_ueman/clips/fistleftgo
-      Dependencies: {}
-    Info_48:
-      Name: assetbundle/prefabs/model/role_ueman/clips/fistthreego
-      Dependencies: {}
-    Info_49:
-      Name: assetbundle/prefabs/model/role_ueman/clips/fisttwogo
-      Dependencies: {}
-    Info_50:
-      Name: assetbundle/prefabs/model/role_ueman/clips/getup
-      Dependencies: {}
-    Info_51:
-      Name: assetbundle/prefabs/model/role_ueman/clips/idle
-      Dependencies: {}
-    Info_52:
-      Name: assetbundle/prefabs/model/role_ueman/clips/jumpdown
-      Dependencies: {}
-    Info_53:
-      Name: assetbundle/prefabs/model/role_ueman/clips/jumpup
-      Dependencies: {}
-    Info_54:
-      Name: assetbundle/prefabs/model/role_ueman/model/role_ueman
-      Dependencies:
-        Dependency_0: assetbundle/prefabs/model/role_ueman/animator/role_ueman_controller
-    Info_55:
-      Name: assetbundle/modeltextures/12
-      Dependencies: {}
-    Info_56:
-      Name: assetbundle/modeltextures/3dch2040_1
-      Dependencies: {}
-    Info_57:
-      Name: assetbundle/prefabs/model/role_ueman/clips/fistrightgo
-      Dependencies: {}
-    Info_58:
-      Name: assetbundle/prefabs/model/role_ueman/clips/leftleggo
-      Dependencies: {}
-    Info_59:
-      Name: assetbundle/prefabs/model/role_ueman/clips/jumploop
-      Dependencies: {}
-    Info_60:
-      Name: assetbundle/prefabs/model/role_ueman/clips/bowright
-      Dependencies: {}
-    Info_61:
-      Name: assetbundle/atlas/playerskillatlas
-      Dependencies: {}
-    Info_62:
-      Name: assetbundle/atlas/skillatlas
-      Dependencies: {}
-    Info_63:
-      Name: assetbundle/atlas/titleatlas
-      Dependencies: {}
-    Info_64:
-      Name: assetbundle/prefabs/ui/bottommidui
-      Dependencies:
-        Dependency_0: assetbundle/atlas/commonatlas
-        Dependency_1: assetbundle/materials/uihp
-        Dependency_2: assetbundle/materials/uimp
-        Dependency_3: assetbundle/modeltextures/b
-        Dependency_4: assetbundle/modeltextures/o
-    Info_65:
-      Name: assetbundle/prefabs/ui/bottomskillui
-      Dependencies:
-        Dependency_0: assetbundle/atlas/commonatlas
-        Dependency_1: assetbundle/atlas/playerskillatlas
-    Info_66:
-      Name: assetbundle/prefabs/ui/facebookui
-      Dependencies:
-        Dependency_0: assetbundle/atlas/skillatlas
-    Info_67:
-      Name: assetbundle/prefabs/ui/guildui
-      Dependencies:
-        Dependency_0: assetbundle/atlas/skillatlas
-    Info_68:
-      Name: assetbundle/prefabs/ui/joystickui
-      Dependencies:
-        Dependency_0: assetbundle/atlas/skillatlas
-    Info_69:
-      Name: assetbundle/prefabs/ui/skillui
-      Dependencies:
-        Dependency_0: assetbundle/atlas/facebookatlas
-        Dependency_1: assetbundle/atlas/skillatlas
-    Info_70:
-      Name: assetbundle/prefabs/ui/topleftui
-      Dependencies: {}
-    Info_71:
-      Name: assetbundle/prefabs/ui/uicanvas
-      Dependencies: {}
-    Info_72:
-      Name: assetbundle/prefabs/ui/updownanimui
-      Dependencies:
-        Dependency_0: assetbundle/atlas/facebookatlas
-    Info_73:
-      Name: assetbundle/materials/beam
-      Dependencies: {}
-    Info_74:
-      Name: assetbundle/materials/big_circle
-      Dependencies: {}
-    Info_75:
-      Name: assetbundle/materials/blackhole
-      Dependencies: {}
-    Info_76:
-      Name: assetbundle/materials/blood_puddle
-      Dependencies: {}
-    Info_77:
-      Name: assetbundle/materials/blood_splat
-      Dependencies: {}
-    Info_78:
-      Name: assetbundle/materials/broken_decal
-      Dependencies: {}
-    Info_79:
-      Name: assetbundle/materials/bubble
-      Dependencies: {}
-    Info_80:
-      Name: assetbundle/materials/circle
-      Dependencies:
-        Dependency_0: assetbundle/modeltextures/circle
-    Info_81:
-      Name: assetbundle/materials/ds_equipment_standard
-      Dependencies: {}
-    Info_82:
-      Name: assetbundle/materials/ds_skeleton_standard
-      Dependencies: {}
-    Info_83:
-      Name: assetbundle/materials/electricbomb_explosion
-      Dependencies: {}
-    Info_84:
-      Name: assetbundle/materials/electricbomb_explosion_add
-      Dependencies: {}
-    Info_85:
-      Name: assetbundle/materials/electric_splat_hit
-      Dependencies: {}
-    Info_86:
-      Name: assetbundle/materials/electric_splat_hit_add
-      Dependencies: {}
-    Info_87:
-      Name: assetbundle/materials/fire01
-      Dependencies: {}
-    Info_88:
-      Name: assetbundle/materials/fire_real
-      Dependencies: {}
-    Info_89:
-      Name: assetbundle/materials/fire_smoke01
-      Dependencies: {}
-    Info_90:
-      Name: assetbundle/materials/flamebomb_explosion
-      Dependencies: {}
-    Info_91:
-      Name: assetbundle/materials/flame_explosion
-      Dependencies: {}
-    Info_92:
-      Name: assetbundle/materials/flame_explosion_add
-      Dependencies: {}
-    Info_93:
-      Name: assetbundle/materials/flame_splat_hit
-      Dependencies: {}
-    Info_94:
-      Name: assetbundle/materials/floor
-      Dependencies: {}
-    Info_95:
-      Name: assetbundle/materials/floor_bg
-      Dependencies: {}
-    Info_96:
-      Name: assetbundle/materials/glacialwall_mesh
-      Dependencies: {}
-    Info_97:
-      Name: assetbundle/materials/greenlight_broken_decal
-      Dependencies: {}
-    Info_98:
-      Name: assetbundle/materials/heal_decal
-      Dependencies: {}
-    Info_99:
-      Name: assetbundle/materials/heavy_smoke
-      Dependencies: {}
-    Info_100:
-      Name: assetbundle/materials/icewall_mesh
-      Dependencies: {}
-    Info_101:
-      Name: assetbundle/materials/ice_decal
-      Dependencies: {}
-    Info_102:
-      Name: assetbundle/materials/ice_floor
-      Dependencies: {}
-    Info_103:
-      Name: assetbundle/materials/leaf
-      Dependencies: {}
-    Info_104:
-      Name: assetbundle/materials/light
-      Dependencies: {}
-    Info_105:
-      Name: assetbundle/materials/light2
-      Dependencies: {}
-    Info_106:
-      Name: assetbundle/materials/light3
-      Dependencies: {}
-    Info_107:
-      Name: assetbundle/materials/light_add
-      Dependencies: {}
-    Info_108:
-      Name: assetbundle/materials/light_decal
-      Dependencies: {}
-    Info_109:
-      Name: assetbundle/materials/light_smoke
-      Dependencies: {}
-    Info_110:
-      Name: assetbundle/materials/monster_coco
-      Dependencies: {}
-    Info_111:
-      Name: assetbundle/materials/pulse_smoke
-      Dependencies: {}
-    Info_112:
-      Name: assetbundle/materials/pulse_stretch
-      Dependencies: {}
-    Info_113:
-      Name: assetbundle/materials/pulse_stretch_add
-      Dependencies: {}
-    Info_114:
-      Name: assetbundle/materials/pulse_stretch_m
-      Dependencies: {}
-    Info_115:
-      Name: assetbundle/materials/pulse_wave
-      Dependencies: {}
-    Info_116:
-      Name: assetbundle/materials/rhombus
-      Dependencies: {}
-    Info_117:
-      Name: assetbundle/materials/ring
-      Dependencies: {}
-    Info_118:
-      Name: assetbundle/materials/role_mimi
-      Dependencies: {}
-    Info_119:
-      Name: assetbundle/materials/shield
-      Dependencies: {}
-    Info_120:
-      Name: assetbundle/materials/shield_floor
-      Dependencies: {}
-    Info_121:
-      Name: assetbundle/materials/shine_decal1
-      Dependencies: {}
-    Info_122:
-      Name: assetbundle/materials/shine_decal2
-      Dependencies: {}
-    Info_123:
-      Name: assetbundle/materials/shine_decal3
-      Dependencies: {}
-    Info_124:
-      Name: assetbundle/materials/shine_decal4
-      Dependencies: {}
-    Info_125:
-      Name: assetbundle/materials/smoke
-      Dependencies: {}
-    Info_126:
-      Name: assetbundle/materials/soft_smoke
-      Dependencies: {}
-    Info_127:
-      Name: assetbundle/materials/soil_decal
-      Dependencies: {}
-    Info_128:
-      Name: assetbundle/materials/soot_decal
-      Dependencies: {}
-    Info_129:
-      Name: assetbundle/materials/spark
-      Dependencies: {}
-    Info_130:
-      Name: assetbundle/materials/spark_increase
-      Dependencies: {}
-    Info_131:
-      Name: assetbundle/materials/stone_debris
-      Dependencies: {}
-    Info_132:
-      Name: assetbundle/materials/stretch_hit01
-      Dependencies: {}
-    Info_133:
-      Name: assetbundle/materials/swirl_smoke
-      Dependencies: {}
-    Info_134:
-      Name: assetbundle/materials/sword
-      Dependencies: {}
-    Info_135:
       Name: assetbundle/materials/terrain
       Dependencies: {}
-    Info_136:
-      Name: assetbundle/materials/trajectory_blur
+    Info_36:
+      Name: assetbundle/prefabs/model/role_superman/clips/jumpup
       Dependencies: {}
-    Info_137:
-      Name: assetbundle/materials/trajectory_electro
-      Dependencies: {}
-    Info_138:
-      Name: assetbundle/materials/trajectory_flame
-      Dependencies: {}
-    Info_139:
-      Name: assetbundle/materials/trajectory_flame_add
-      Dependencies: {}
-    Info_140:
-      Name: assetbundle/materials/twinkle
-      Dependencies: {}
-    Info_141:
-      Name: assetbundle/materials/twirl
-      Dependencies: {}
-    Info_142:
-      Name: assetbundle/materials/uienergy
+    Info_37:
+      Name: assetbundle/prefabs/ui/skillui
       Dependencies:
-        Dependency_0: assetbundle/modeltextures/noisedark
-        Dependency_1: assetbundle/shader/uienergy
-    Info_143:
+        Dependency_0: assetbundle/atlas/skillatlas
+        Dependency_1: assetbundle/atlas/facebookatlas
+    Info_38:
+      Name: assetbundle/prefabs/model/role_fistgirl/clips/ueattack
+      Dependencies: {}
+    Info_39:
       Name: assetbundle/materials/uihp
       Dependencies:
         Dependency_0: assetbundle/modeltextures/noisedark
         Dependency_1: assetbundle/shader/uihead
-    Info_144:
+    Info_40:
+      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack6
+      Dependencies: {}
+    Info_41:
+      Name: assetbundle/materials/circle
+      Dependencies:
+        Dependency_0: assetbundle/modeltextures/circle
+    Info_42:
+      Name: assetbundle/prefabs/model/role_ueman/clips/bowright
+      Dependencies: {}
+    Info_43:
+      Name: assetbundle/prefabs/ui/bottommidui
+      Dependencies:
+        Dependency_0: assetbundle/atlas/commonatlas
+        Dependency_1: assetbundle/modeltextures/b
+        Dependency_2: assetbundle/modeltextures/o
+        Dependency_3: assetbundle/materials/uihp
+        Dependency_4: assetbundle/materials/uimp
+    Info_44:
+      Name: assetbundle/prefabs/model/role_ueman/clips/behit2
+      Dependencies: {}
+    Info_45:
+      Name: assetbundle/prefabs/ui/uicanvas
+      Dependencies: {}
+    Info_46:
+      Name: assetbundle/prefabs/model/role_ueman/clips/jumploop
+      Dependencies: {}
+    Info_47:
+      Name: assetbundle/prefabs/ui/updownanimui
+      Dependencies:
+        Dependency_0: assetbundle/atlas/facebookatlas
+    Info_48:
+      Name: assetbundle/prefabs/model/role_ueman/clips/leftleggo
+      Dependencies: {}
+    Info_49:
+      Name: assetbundle/prefabs/model/role_superman/clips/run
+      Dependencies: {}
+    Info_50:
+      Name: assetbundle/prefabs/model/role_ueman/clips/jumpdown
+      Dependencies: {}
+    Info_51:
+      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack1
+      Dependencies: {}
+    Info_52:
+      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack7
+      Dependencies: {}
+    Info_53:
       Name: assetbundle/materials/uimp
       Dependencies:
         Dependency_0: assetbundle/modeltextures/noisedark
         Dependency_1: assetbundle/shader/uihead
-    Info_145:
-      Name: assetbundle/materials/water_splash
-      Dependencies: {}
-    Info_146:
-      Name: assetbundle/materials/wood_mesh
-      Dependencies: {}
-    Info_147:
-      Name: assetbundle/modeltextures/106200001
-      Dependencies: {}
-    Info_148:
-      Name: assetbundle/modeltextures/b
-      Dependencies: {}
-    Info_149:
-      Name: assetbundle/modeltextures/beam
-      Dependencies: {}
-    Info_150:
-      Name: assetbundle/modeltextures/bg
-      Dependencies: {}
-    Info_151:
-      Name: assetbundle/modeltextures/big_circle
-      Dependencies: {}
-    Info_152:
-      Name: assetbundle/modeltextures/blackhole
-      Dependencies: {}
-    Info_153:
-      Name: assetbundle/modeltextures/blood_puddle
-      Dependencies: {}
-    Info_154:
-      Name: assetbundle/modeltextures/blood_splat
-      Dependencies: {}
-    Info_155:
-      Name: assetbundle/modeltextures/broken_decal
-      Dependencies: {}
-    Info_156:
-      Name: assetbundle/modeltextures/bubble
-      Dependencies: {}
-    Info_157:
-      Name: assetbundle/modeltextures/circle2
-      Dependencies: {}
-    Info_158:
-      Name: assetbundle/modeltextures/ds_equipment_standard
-      Dependencies: {}
-    Info_159:
-      Name: assetbundle/modeltextures/ds_skeleton_standard
-      Dependencies: {}
-    Info_160:
-      Name: assetbundle/modeltextures/electricbomb_explosion
-      Dependencies: {}
-    Info_161:
-      Name: assetbundle/modeltextures/electric_splat_hit
-      Dependencies: {}
-    Info_162:
-      Name: assetbundle/modeltextures/fire01
-      Dependencies: {}
-    Info_163:
-      Name: assetbundle/modeltextures/fire_real
-      Dependencies: {}
-    Info_164:
-      Name: assetbundle/modeltextures/fire_smoke01
-      Dependencies: {}
-    Info_165:
-      Name: assetbundle/modeltextures/flamebomb_explosion
-      Dependencies: {}
-    Info_166:
-      Name: assetbundle/modeltextures/flame_explosion
-      Dependencies: {}
-    Info_167:
-      Name: assetbundle/modeltextures/flame_splat_hit
-      Dependencies: {}
-    Info_168:
-      Name: assetbundle/modeltextures/floor
-      Dependencies: {}
-    Info_169:
-      Name: assetbundle/modeltextures/floor_bg
-      Dependencies: {}
-    Info_170:
-      Name: assetbundle/modeltextures/fx_tex_smoke04
-      Dependencies: {}
-    Info_171:
-      Name: assetbundle/modeltextures/glacialwall_mesh
-      Dependencies: {}
-    Info_172:
-      Name: assetbundle/modeltextures/greenlight_broken_decal
-      Dependencies: {}
-    Info_173:
-      Name: assetbundle/modeltextures/ground 1
-      Dependencies: {}
-    Info_174:
-      Name: assetbundle/modeltextures/heal_decal
-      Dependencies: {}
-    Info_175:
-      Name: assetbundle/modeltextures/heavy_smoke
-      Dependencies: {}
-    Info_176:
-      Name: assetbundle/modeltextures/icewall_mesh
-      Dependencies: {}
-    Info_177:
-      Name: assetbundle/modeltextures/ice_decal
-      Dependencies: {}
-    Info_178:
-      Name: assetbundle/modeltextures/ice_floor
-      Dependencies: {}
-    Info_179:
-      Name: assetbundle/modeltextures/leaf
-      Dependencies: {}
-    Info_180:
-      Name: assetbundle/modeltextures/light
-      Dependencies: {}
-    Info_181:
-      Name: assetbundle/modeltextures/light2
-      Dependencies: {}
-    Info_182:
-      Name: assetbundle/modeltextures/light3
-      Dependencies: {}
-    Info_183:
-      Name: assetbundle/modeltextures/light_decal
-      Dependencies: {}
-    Info_184:
-      Name: assetbundle/modeltextures/light_smoke
-      Dependencies: {}
-    Info_185:
-      Name: assetbundle/modeltextures/noisedark
-      Dependencies: {}
-    Info_186:
-      Name: assetbundle/modeltextures/noisewhite
-      Dependencies: {}
-    Info_187:
-      Name: assetbundle/modeltextures/o
-      Dependencies: {}
-    Info_188:
-      Name: assetbundle/modeltextures/pulse_smoke
-      Dependencies: {}
-    Info_189:
-      Name: assetbundle/modeltextures/pulse_stretch
-      Dependencies: {}
-    Info_190:
-      Name: assetbundle/modeltextures/pulse_stretch_m
-      Dependencies: {}
-    Info_191:
-      Name: assetbundle/modeltextures/pulse_wave
-      Dependencies: {}
-    Info_192:
-      Name: assetbundle/modeltextures/rhombus
-      Dependencies: {}
-    Info_193:
-      Name: assetbundle/modeltextures/ring
-      Dependencies: {}
-    Info_194:
-      Name: assetbundle/modeltextures/role_mimi
-      Dependencies: {}
-    Info_195:
-      Name: assetbundle/modeltextures/shield
-      Dependencies: {}
-    Info_196:
-      Name: assetbundle/modeltextures/shield_floor
-      Dependencies: {}
-    Info_197:
-      Name: assetbundle/modeltextures/shine_decal
-      Dependencies: {}
-    Info_198:
-      Name: assetbundle/modeltextures/sjboss_bg
-      Dependencies: {}
-    Info_199:
-      Name: assetbundle/modeltextures/smoke
-      Dependencies: {}
-    Info_200:
-      Name: assetbundle/modeltextures/soft_smoke
-      Dependencies: {}
-    Info_201:
-      Name: assetbundle/modeltextures/soil_decal
-      Dependencies: {}
-    Info_202:
-      Name: assetbundle/modeltextures/soot_decal
-      Dependencies: {}
-    Info_203:
-      Name: assetbundle/modeltextures/spark
-      Dependencies: {}
-    Info_204:
-      Name: assetbundle/modeltextures/spark_increase
-      Dependencies: {}
-    Info_205:
-      Name: assetbundle/modeltextures/stone_debris
-      Dependencies: {}
-    Info_206:
-      Name: assetbundle/modeltextures/stretch_hit01
-      Dependencies: {}
-    Info_207:
-      Name: assetbundle/modeltextures/swirl_smoke
-      Dependencies: {}
-    Info_208:
-      Name: assetbundle/modeltextures/sword
-      Dependencies: {}
-    Info_209:
-      Name: assetbundle/modeltextures/trajectory_blur
-      Dependencies: {}
-    Info_210:
-      Name: assetbundle/modeltextures/trajectory_electro
-      Dependencies: {}
-    Info_211:
-      Name: assetbundle/modeltextures/trajectory_flame
-      Dependencies: {}
-    Info_212:
-      Name: assetbundle/modeltextures/twinkle
-      Dependencies: {}
-    Info_213:
-      Name: assetbundle/modeltextures/twirl
-      Dependencies: {}
-    Info_214:
-      Name: assetbundle/modeltextures/water_splash
-      Dependencies: {}
-    Info_215:
-      Name: assetbundle/modeltextures/wood_mesh
-      Dependencies: {}
-    Info_216:
-      Name: assetbundle/modeltextures/zz_bg
-      Dependencies: {}
-    Info_217:
-      Name: assetbundle/shader/terrain
-      Dependencies: {}
-    Info_218:
-      Name: assetbundle/shader/tuidefault
-      Dependencies: {}
-    Info_219:
-      Name: assetbundle/shader/uienergy
-      Dependencies: {}
-    Info_220:
-      Name: assetbundle/shader/uihead
-      Dependencies: {}
-    Info_221:
+    Info_54:
+      Name: assetbundle/prefabs/model/role_ueman/clips/fisttwogo
+      Dependencies: {}
+    Info_55:
+      Name: assetbundle/prefabs/ui/topleftui
+      Dependencies: {}
+    Info_56:
+      Name: assetbundle/prefabs/model/role_fistgirl/model/role_fistgirl
+      Dependencies:
+        Dependency_0: assetbundle/prefabs/model/role_fistgirl/animator/role_fistgirl_controller
+    Info_57:
+      Name: assetbundle/prefabs/model/role_superman/clips/idle
+      Dependencies: {}
+    Info_58:
+      Name: assetbundle/prefabs/ui/guildui
+      Dependencies:
+        Dependency_0: assetbundle/atlas/skillatlas
+    Info_59:
+      Name: assetbundle/prefabs/model/role_ueman/clips/die
+      Dependencies: {}
+    Info_60:
       Name: assetbundle/prefabs/model/role_ueman/clips/run
       Dependencies: {}
-    Info_222:
+    Info_61:
       Name: assetbundle/prefabs/effect/bloodsplatcritical
       Dependencies:
         Dependency_0: assetbundle/materials/circle
-    Info_223:
-      Name: assetbundle/modeltextures/circle
+    Info_62:
+      Name: assetbundle/prefabs/ui/bottomskillui
+      Dependencies:
+        Dependency_0: assetbundle/atlas/commonatlas
+        Dependency_1: assetbundle/atlas/playerskillatlas
+    Info_63:
+      Name: assetbundle/prefabs/ui/joystickui
+      Dependencies:
+        Dependency_0: assetbundle/atlas/skillatlas
+    Info_64:
+      Name: assetbundle/prefabs/model/role_ueman/clips/attack1
+      Dependencies: {}
+    Info_65:
+      Name: assetbundle/prefabs/model/role_ueman/clips/fistrightgo
+      Dependencies: {}
+    Info_66:
+      Name: assetbundle/prefabs/model/role_superman/model/role_superman
+      Dependencies:
+        Dependency_0: assetbundle/prefabs/model/role_superman/animator/role_superman_controller
+    Info_67:
+      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack5
+      Dependencies: {}
+    Info_68:
+      Name: assetbundle/prefabs/model/role_superman/clips/hart
+      Dependencies: {}
+    Info_69:
+      Name: assetbundle/prefabs/model/role_ueman/clips/fistthreego
+      Dependencies: {}
+    Info_70:
+      Name: assetbundle/prefabs/ui/testui
+      Dependencies:
+        Dependency_0: assetbundle/atlas/commonatlas
+        Dependency_1: assetbundle/atlas/skillatlas
+        Dependency_2: assetbundle/atlas/teamatlas
+    Info_71:
+      Name: assetbundle/materials/uienergy
+      Dependencies:
+        Dependency_0: assetbundle/modeltextures/noisedark
+        Dependency_1: assetbundle/shader/uienergy
+    Info_72:
+      Name: assetbundle/materials/ground
+      Dependencies:
+        Dependency_0: assetbundle/modeltextures/ground
+    Info_73:
+      Name: assetbundle/prefabs/model/role_superman/clips/attack
+      Dependencies: {}
+    Info_74:
+      Name: assetbundle/prefabs/model/role_superman/clips/liedown
+      Dependencies: {}
+    Info_75:
+      Name: assetbundle/prefabs/ui/facebookui
+      Dependencies:
+        Dependency_0: assetbundle/atlas/skillatlas
+    Info_76:
+      Name: assetbundle/prefabs/model/role_ueman/clips/idle
+      Dependencies: {}
+    Info_77:
+      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack3
+      Dependencies: {}
+    Info_78:
+      Name: assetbundle/prefabs/model/role_superman/clips/jumpdown
+      Dependencies: {}
+    Info_79:
+      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack4
+      Dependencies: {}
+    Info_80:
+      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack2
+      Dependencies: {}
+    Info_81:
+      Name: assetbundle/prefabs/model/role_ueman/clips/jumpup
+      Dependencies: {}
+    Info_82:
+      Name: assetbundle/prefabs/model/role_ueman/clips/attack2
+      Dependencies: {}
+    Info_83:
+      Name: assetbundle/prefabs/model/role_fistgirl/clips/attack8
+      Dependencies: {}
+    Info_84:
+      Name: assetbundle/prefabs/model/role_ueman/clips/fistleftgo
+      Dependencies: {}
+    Info_85:
+      Name: assetbundle/prefabs/model/role_superman/clips/die
+      Dependencies: {}
+    Info_86:
+      Name: assetbundle/prefabs/model/role_ueman/model/role_ueman
+      Dependencies:
+        Dependency_0: assetbundle/prefabs/model/role_ueman/animator/role_ueman_controller
+    Info_87:
+      Name: assetbundle/prefabs/model/role_ueman/clips/behit1
+      Dependencies: {}
+    Info_88:
+      Name: assetbundle/materials/role_mimi
+      Dependencies: {}
+    Info_89:
+      Name: assetbundle/prefabs/model/role_ueman/clips/getup
+      Dependencies: {}
+    Info_90:
+      Name: assetbundle/prefabs/model/role_ueman/animator/role_ueman_controller
+      Dependencies:
+        Dependency_0: assetbundle/prefabs/model/role_ueman/clips/bowright
+        Dependency_1: assetbundle/prefabs/model/role_ueman/clips/behit2
+        Dependency_2: assetbundle/prefabs/model/role_ueman/clips/jumploop
+        Dependency_3: assetbundle/prefabs/model/role_ueman/clips/leftleggo
+        Dependency_4: assetbundle/prefabs/model/role_ueman/clips/jumpdown
+        Dependency_5: assetbundle/prefabs/model/role_ueman/clips/fisttwogo
+        Dependency_6: assetbundle/prefabs/model/role_ueman/clips/die
+        Dependency_7: assetbundle/prefabs/model/role_ueman/clips/run
+        Dependency_8: assetbundle/prefabs/model/role_ueman/clips/attack1
+        Dependency_9: assetbundle/prefabs/model/role_ueman/clips/fistrightgo
+        Dependency_10: assetbundle/prefabs/model/role_ueman/clips/fistthreego
+        Dependency_11: assetbundle/prefabs/model/role_ueman/clips/idle
+        Dependency_12: assetbundle/prefabs/model/role_ueman/clips/jumpup
+        Dependency_13: assetbundle/prefabs/model/role_ueman/clips/attack2
+        Dependency_14: assetbundle/prefabs/model/role_ueman/clips/fistleftgo
+        Dependency_15: assetbundle/prefabs/model/role_ueman/clips/behit1
+        Dependency_16: assetbundle/prefabs/model/role_ueman/clips/getup
+    Info_91:
+      Name: assetbundle/prefabs/model/role_superman/animator/role_superman_controller
+      Dependencies:
+        Dependency_0: assetbundle/prefabs/model/role_superman/clips/jumpup
+        Dependency_1: assetbundle/prefabs/model/role_superman/clips/run
+        Dependency_2: assetbundle/prefabs/model/role_superman/clips/idle
+        Dependency_3: assetbundle/prefabs/model/role_superman/clips/hart
+        Dependency_4: assetbundle/prefabs/model/role_superman/clips/attack
+        Dependency_5: assetbundle/prefabs/model/role_superman/clips/liedown
+        Dependency_6: assetbundle/prefabs/model/role_superman/clips/jumpdown
+        Dependency_7: assetbundle/prefabs/model/role_superman/clips/die
+    Info_92:
+      Name: assetbundle/prefabs/model/role_fistgirl/animator/role_fistgirl_controller
+      Dependencies:
+        Dependency_0: assetbundle/prefabs/model/role_fistgirl/clips/ueattack
+        Dependency_1: assetbundle/prefabs/model/role_fistgirl/clips/attack6
+        Dependency_2: assetbundle/prefabs/model/role_fistgirl/clips/attack1
+        Dependency_3: assetbundle/prefabs/model/role_fistgirl/clips/attack7
+        Dependency_4: assetbundle/prefabs/model/role_fistgirl/clips/attack5
+        Dependency_5: assetbundle/prefabs/model/role_fistgirl/clips/attack3
+        Dependency_6: assetbundle/prefabs/model/role_fistgirl/clips/attack4
+        Dependency_7: assetbundle/prefabs/model/role_fistgirl/clips/attack2
+        Dependency_8: assetbundle/prefabs/model/role_fistgirl/clips/attack8
+    Info_93:
+      Name: assetbundle/materials/uihorbloodmat
+      Dependencies:
+        Dependency_0: assetbundle/modeltextures/noisedark
+        Dependency_1: assetbundle/shader/uihorizontalblood
+    Info_94:
+      Name: assetbundle/modeltextures/horblood
+      Dependencies: {}
+    Info_95:
+      Name: assetbundle/shader/uihorizontalblood
+      Dependencies: {}
+    Info_96:
+      Name: assetbundle/cfgs/atlasinfo
       Dependencies: {}

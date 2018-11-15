@@ -3,7 +3,7 @@ CRC: 281513746
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 70b5d87a7b9d29a9e5c041c0c20f3438
+    Hash: 5bb8cbf59f53d6c0311a47ea11abefba
   TypeTreeHash:
     serializedVersion: 2
     Hash: 75570fe5ca0e8315cfd033882c7d9e75
@@ -36,5 +36,5 @@ ClassTypes:
 Assets:
 - Assets/Res/AssetBundle/Prefabs/ui/BottomSkillUI.prefab
 Dependencies:
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/atlas/commonatlas
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/atlas/playerskillatlas
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/atlas/commonatlas
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/atlas/playerskillatlas

@@ -3,7 +3,7 @@ CRC: 304734699
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 47e6cacdf85f14affb81cb9525096391
+    Hash: b24fe966c36d2a88619f25caf54123a2
   TypeTreeHash:
     serializedVersion: 2
     Hash: abb9b9167ab0d9f4af2beeb617361f49
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/AssetBundle/Materials/circle.mat
 Dependencies:
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/circle
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/circle

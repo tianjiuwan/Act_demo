@@ -48,6 +48,10 @@ public class AssetCacheWindow : EditorWindow
         List<PackAsset> lst = new List<PackAsset>();
         Dictionary<string, PackAsset> map = AssetMgr.Instance.getAll();
         lst.AddRange(map.Values);
+        lst.Sort((m, n) =>
+        {
+            return m.RefCount > n.RefCount ? 1 : 0;
+        });
         for (int i = 0; i < lst.Count; i++)
         {
             GUILayout.BeginHorizontal();

@@ -3,7 +3,7 @@ CRC: 2508736584
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 7d7cb8a5621585d4cc2e64c712f8a8f1
+    Hash: 3d3625f48622a5696fabf52edbf6bcfd
   TypeTreeHash:
     serializedVersion: 2
     Hash: abb9b9167ab0d9f4af2beeb617361f49
@@ -18,5 +18,5 @@ ClassTypes:
 Assets:
 - Assets/Res/AssetBundle/Materials/UIEnergy.mat
 Dependencies:
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/noisedark
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/shader/uienergy
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/noisedark
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/shader/uienergy

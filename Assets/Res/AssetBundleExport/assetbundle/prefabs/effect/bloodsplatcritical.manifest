@@ -3,7 +3,7 @@ CRC: 398123737
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1403b19eb244553e0d3bd52474d55e43
+    Hash: 7cb383cb90831edecf6a724c3d479db5
   TypeTreeHash:
     serializedVersion: 2
     Hash: ac0edc34977d147448e346aa93f2763d
@@ -22,4 +22,4 @@ ClassTypes:
 Assets:
 - Assets/Res/AssetBundle/Prefabs/effect/BloodSplatCritical.prefab
 Dependencies:
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/materials/circle
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/materials/circle

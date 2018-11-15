@@ -3,7 +3,7 @@ CRC: 1735508269
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6e897bbfbb334099145d1bf9351a8934
+    Hash: a90b44375b5f81366157933acb8280dd
   TypeTreeHash:
     serializedVersion: 2
     Hash: abb9b9167ab0d9f4af2beeb617361f49
@@ -18,5 +18,5 @@ ClassTypes:
 Assets:
 - Assets/Res/AssetBundle/Materials/UIMP.mat
 Dependencies:
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/noisedark
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/shader/uihead
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/noisedark
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/shader/uihead

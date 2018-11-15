@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 915522712
+CRC: 3558880593
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ac1ba7a2871130c34501cb04edd068f6
+    Hash: 79ac62ed20faf678d656258e109c8409
   TypeTreeHash:
     serializedVersion: 2
     Hash: df221c2f2e80a232c0b8bb8be59cfbba
@@ -34,5 +34,5 @@ ClassTypes:
 Assets:
 - Assets/Res/AssetBundle/Prefabs/ui/SkillUI.prefab
 Dependencies:
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/atlas/facebookatlas
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/atlas/skillatlas
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/atlas/skillatlas
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/atlas/facebookatlas

@@ -3,7 +3,7 @@ CRC: 1039017682
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1d9a6df3cd6046b075dd8ebdf0290306
+    Hash: be45b7511c8be0673b23fc2469aef19b
   TypeTreeHash:
     serializedVersion: 2
     Hash: abb9b9167ab0d9f4af2beeb617361f49
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Res/AssetBundle/Materials/role_001.mat
 Dependencies:
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/role_001
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/role_001

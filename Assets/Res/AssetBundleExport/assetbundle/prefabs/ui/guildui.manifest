@@ -3,7 +3,7 @@ CRC: 2470408492
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 457bb1caedf24e0427d1ff67584f8b40
+    Hash: a13a99a2400af2f8d7b09a42db93104b
   TypeTreeHash:
     serializedVersion: 2
     Hash: b152d14024ae9b5adb93dd6b0518c372
@@ -40,4 +40,4 @@ ClassTypes:
 Assets:
 - Assets/Res/AssetBundle/Prefabs/ui/GuildUI.prefab
 Dependencies:
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/atlas/skillatlas
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/atlas/skillatlas

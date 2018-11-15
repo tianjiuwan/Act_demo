@@ -3,7 +3,7 @@ CRC: 3536720143
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 900d13592842404c51c802d1ff5cccdf
+    Hash: b463594c229dec1de89f9c7a615fa29c
   TypeTreeHash:
     serializedVersion: 2
     Hash: 72fcfa1a74b27af4856e63f48fa870e6
@@ -24,4 +24,4 @@ ClassTypes:
 Assets:
 - Assets/Res/AssetBundle/Prefabs/ui/JoyStickUI.prefab
 Dependencies:
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/atlas/skillatlas
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/atlas/skillatlas

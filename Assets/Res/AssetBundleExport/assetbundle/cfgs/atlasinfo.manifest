@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 3403985960
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ac9dde879147e4b0c6ec799c60ea99ac
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ebd4ce58e706b34c96c1924cdcdc7174
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 929fd3ffb80bc94469dc486f4ec4c2d9, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/AssetBundle/cfgs/atlasInfo.asset
+Dependencies: []

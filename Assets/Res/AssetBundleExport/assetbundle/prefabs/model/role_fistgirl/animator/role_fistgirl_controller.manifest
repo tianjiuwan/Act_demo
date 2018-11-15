@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 785885436
+CRC: 3039173491
 Hashes:
   AssetFileHash:
     serializedVersion: 2
@@ -16,12 +16,12 @@ ClassTypes:
 Assets:
 - Assets/Res/AssetBundle/Prefabs/Model/role_fistgirl/animator/role_fistgirl_Controller.controller
 Dependencies:
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack1
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack2
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack3
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack4
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack5
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack6
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack7
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack8
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/ueattack
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/ueattack
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack6
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack1
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack7
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack5
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack3
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack4
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack2
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/prefabs/model/role_fistgirl/clips/attack8

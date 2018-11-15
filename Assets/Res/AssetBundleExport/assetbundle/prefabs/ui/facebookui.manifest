@@ -3,7 +3,7 @@ CRC: 3723547355
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5a0f4e9c5abea8d17e6c43f8a8e7c189
+    Hash: 88bfac811de35aab3d971e9d51deb33a
   TypeTreeHash:
     serializedVersion: 2
     Hash: 4e994be5f195f7b5b14eca9ba8257f48
@@ -36,4 +36,4 @@ ClassTypes:
 Assets:
 - Assets/Res/AssetBundle/Prefabs/ui/FaceBookUI.prefab
 Dependencies:
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/atlas/skillatlas
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/atlas/skillatlas

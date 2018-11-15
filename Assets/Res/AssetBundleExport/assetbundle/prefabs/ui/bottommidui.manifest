@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1762502826
+CRC: 3549334739
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1a2b84cc3fc195b453021f8fa40da62e
+    Hash: 078ecbacc894a27f7bc787b415c88520
   TypeTreeHash:
     serializedVersion: 2
     Hash: 4e994be5f195f7b5b14eca9ba8257f48
@@ -36,8 +36,8 @@ ClassTypes:
 Assets:
 - Assets/Res/AssetBundle/Prefabs/ui/BottomMidUI.prefab
 Dependencies:
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/atlas/commonatlas
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/materials/uihp
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/materials/uimp
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/b
-- F:/GithubPro/demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/o
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/atlas/commonatlas
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/b
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/modeltextures/o
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/materials/uihp
+- D:/MyProject/Act_demo/Assets/Res/AssetBundleExport/assetbundle/materials/uimp
